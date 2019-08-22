@@ -1,0 +1,31 @@
+body {
+  text-align: justify;
+}
+
+p.caption {
+  color: #777;
+  margin-top: 10px;
+}
+
+p code {
+  white-space: inherit;
+}
+
+pre {
+  word-break: normal;
+  word-wrap: normal;
+}
+
+pre code {
+  white-space: inherit;
+}
+
+.warningBlock {
+  padding: 1em 1em 1em 1em;
+  margin-bottom: 10px;
+  background: #F8F9F9;
+  border-color: #A93226;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: thin;
+}

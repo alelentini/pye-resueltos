@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Variables Aleatorias Multidimensionales | PyE - Problemas y Ejercicios Resueltos</title>
+  <meta name="description" content="Resolución de problemas y ejercicios de Probabilidad y Estadística" />
+  <meta name="generator" content="bookdown 0.12 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Variables Aleatorias Multidimensionales | PyE - Problemas y Ejercicios Resueltos" />
+  <meta property="og:type" content="book" />
+  <meta property="og:url" content="https://github.com/alelentini/pye-resueltos" />
+  
+  <meta property="og:description" content="Resolución de problemas y ejercicios de Probabilidad y Estadística" />
+  <meta name="github-repo" content="alelentini/pye-resueltos" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Variables Aleatorias Multidimensionales | PyE - Problemas y Ejercicios Resueltos" />
+  
+  <meta name="twitter:description" content="Resolución de problemas y ejercicios de Probabilidad y Estadística" />
+  
+
+<meta name="author" content="Alejandro Lentini" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="variable-aleatoria-continua.html">
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Problemas y ejercicios resueltos</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Prefacio</a></li>
+<li class="chapter" data-level="" data-path="estadistica-descriptiva.html"><a href="estadistica-descriptiva.html"><i class="fa fa-check"></i>Estadística Descriptiva</a><ul>
+<li class="chapter" data-level="" data-path="estadistica-descriptiva.html"><a href="estadistica-descriptiva.html#ejercicios-guia-de-tp"><i class="fa fa-check"></i>Ejercicios Guía de TP</a><ul>
+<li class="chapter" data-level="" data-path="estadistica-descriptiva.html"><a href="estadistica-descriptiva.html#e1.1"><i class="fa fa-check"></i>E1.1</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="probabilidad.html"><a href="probabilidad.html"><i class="fa fa-check"></i>Probabilidad</a><ul>
+<li class="chapter" data-level="" data-path="probabilidad.html"><a href="probabilidad.html#ejercicios-guia-de-tp-1"><i class="fa fa-check"></i>Ejercicios Guía de TP</a><ul>
+<li class="chapter" data-level="" data-path="probabilidad.html"><a href="probabilidad.html#e2.1"><i class="fa fa-check"></i>E2.1</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="variable-aleatoria-discreta.html"><a href="variable-aleatoria-discreta.html"><i class="fa fa-check"></i>Variable Aleatoria Discreta</a><ul>
+<li class="chapter" data-level="" data-path="variable-aleatoria-discreta.html"><a href="variable-aleatoria-discreta.html#ejercicios-guia-de-tp-2"><i class="fa fa-check"></i>Ejercicios Guía de TP</a><ul>
+<li class="chapter" data-level="" data-path="variable-aleatoria-discreta.html"><a href="variable-aleatoria-discreta.html#e3.1"><i class="fa fa-check"></i>E3.1</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="variable-aleatoria-continua.html"><a href="variable-aleatoria-continua.html"><i class="fa fa-check"></i>Variable Aleatoria Continua</a><ul>
+<li class="chapter" data-level="" data-path="variable-aleatoria-continua.html"><a href="variable-aleatoria-continua.html#ejercicios-guia-de-tp-3"><i class="fa fa-check"></i>Ejercicios Guía de TP</a><ul>
+<li class="chapter" data-level="" data-path="variable-aleatoria-continua.html"><a href="variable-aleatoria-continua.html#e4.1"><i class="fa fa-check"></i>E4.1</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="variables-aleatorias-multidimensionales.html"><a href="variables-aleatorias-multidimensionales.html"><i class="fa fa-check"></i>Variables Aleatorias Multidimensionales</a><ul>
+<li class="chapter" data-level="" data-path="variables-aleatorias-multidimensionales.html"><a href="variables-aleatorias-multidimensionales.html#ejercicios-guia-de-tp-4"><i class="fa fa-check"></i>Ejercicios Guía de TP</a><ul>
+<li class="chapter" data-level="" data-path="variables-aleatorias-multidimensionales.html"><a href="variables-aleatorias-multidimensionales.html#e5.1"><i class="fa fa-check"></i>E5.1</a></li>
+</ul></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">PyE - Problemas y Ejercicios Resueltos</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="variables-aleatorias-multidimensionales" class="section level1 unnumbered">
+<h1>Variables Aleatorias Multidimensionales</h1>
+<p><br></p>
+<div id="ejercicios-guia-de-tp-4" class="section level2 unnumbered">
+<h2>Ejercicios Guía de TP</h2>
+<p><br></p>
+<div id="e5.1" class="section level3 unnumbered">
+<h3>E5.1</h3>
+<p>La calidad de un producto se determina de acuerdo al número de defectos que contiene. Sea <span class="math inline">\(X\)</span> la variable aleatoria que representa el número de defectos por unidad. Estos productos son sometidos a revisión. Sea <span class="math inline">\(Y\)</span> la variable aleatoria que representa el número de defectos por unidad detectados por el sistema de revisión. La distribución conjunta de probabilidades <span class="math inline">\(p_{X,Y}\)</span> se muestra en la siguiente tabla:</p>
+<p><br></p>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-1"></span>
+<img src="files/5.1_01.PNG" alt="Distribuciones de probabilidad conjunta y marginales"  />
+<p class="caption">
+Figura 1: Distribuciones de probabilidad conjunta y marginales
+</p>
+</div>
+<p><br></p>
+<p><strong>Planteo</strong></p>
+<ul>
+<li>Se supone un proceso de producción que fabrica un dado producto y en cuya salida se puede conceptualizar una población de productos terminados, los cuales pueden someterse luego a una inspección de calidad.</li>
+<li>Un producto puede tener desde ninguno hasta lo sumo dos defectos reales, <span class="math inline">\(R_{X}=\{0,1,2\}\)</span></li>
+<li>El sistema de revisión puede identificar correctamente ninguno o todos los defectos reales, esto es, <span class="math inline">\(R_{Y}=\{0,1,2\}\)</span>.</li>
+</ul>
+<p><br></p>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-2"></span>
+<img src="files/5.1_02.PNG" alt="Planteo del ejercicio 5.1"  />
+<p class="caption">
+Figura 2: Planteo del ejercicio 5.1
+</p>
+</div>
+<p><br></p>
+<p><strong>a)</strong> Calcular <span class="math inline">\(P(X &gt; Y)\)</span>, <span class="math inline">\(P(X = Y)\)</span> y <span class="math inline">\(P(X &lt; Y)\)</span>. Expresar en forma literal que representan cada uno de los eventos cuyas probabilidades se han calculado.</p>
+<p><br></p>
+<ul>
+<li>El evento <span class="math inline">\(X &gt; Y\)</span> representa la situación donde los defectos reales son mayores a los detectados por el sistema de revisión, es decir, son los falsos negativos que arroja el sistema (elementos por debajo de la diagonal de la tabla de sitribución conjunta): <span class="math display">\[P(X &gt; Y) = P[(X = 1 \cap Y = 0) \cup (X = 2 \cap Y = 0) \cup (X = 2 \cap Y = 1)]\]</span> Como los eventos son disjuntos, es posible escribir: <span class="math display">\[P(X &gt; Y) = P(X = 1, Y = 0) + P(X = 2, Y = 0) + P(X = 2, Y = 1) = 0.0028\]</span></li>
+</ul>
+<p><br></p>
+<ul>
+<li>El evento <span class="math inline">\(X = Y\)</span> representa la situación donde los defectos reales son iguales a los detectados por el sistema de revisión, es decir, son los positivos verdaderos que arroja el sistema (elementos en la diagonal de la tabla de sitribución conjunta): <span class="math display">\[P(X = Y) = P(X = 0, Y = 0) + P(X = 1, Y = 1) + P(X = 2, Y = 2) = 0.9710\]</span></li>
+</ul>
+<p><br></p>
+<ul>
+<li>El evento <span class="math inline">\(X &lt; Y\)</span> representa la situación donde los defectos reales son menores a los detectados por el sistema de revisión, es decir, son los falsos positivos que arroja el sistema (elementos por arriba de la diagonal de la tabla de sitribución conjunta): <span class="math display">\[P(X &lt; Y) = P(X = 0, Y = 1) + P(X = 0, Y = 2) + P(X = 1, Y = 2) = 0.0262\]</span></li>
+</ul>
+<p><br></p>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-3"></span>
+<img src="files/5.1_03.PNG" alt="Cálculo de eventos en la tabla de distribución conjunta"  />
+<p class="caption">
+Figura 3: Cálculo de eventos en la tabla de distribución conjunta
+</p>
+</div>
+<p><br></p>
+<p><strong>b)</strong> Encontrar la distribución marginal de <span class="math inline">\(X\)</span> y la correspondiente a <span class="math inline">\(Y\)</span>.</p>
+<p><br></p>
+<p>Las distribuciones marginales <span class="math inline">\(p_{X}(x)\)</span> y <span class="math inline">\(p_{Y}(y)\)</span> se hallan en los márgenes (de allí su nombre) de la tabla de ditribución conjunta. Ya han sido calculadas y se indican en dicha tabla.</p>
+<p><br></p>
+<p><strong>c)</strong> Determinar los valores esperados de <span class="math inline">\(X\)</span> y de <span class="math inline">\(Y\)</span>, y las dispersiones de dichas variables.</p>
+<p><br></p>
+<p>Hallar lo pedido requiere simplemente plantear las definiciones de valor esperado y dispersión.</p>
+<p><br></p>
+<p><span class="math display">\[E(X) = \mu_{X}  = \sum_{R_{X}}xp_{X}(x) = 0.2200\]</span></p>
+<p><span class="math display">\[E(Y) = \mu_{Y} = \sum_{R_{Y}}yp_{Y}(y) = 0.2512\]</span></p>
+<p><span class="math display">\[ \sigma_{X} = +\sqrt{\sigma_{X}^2} = +\sqrt{E[(X - \mu_{X})^2]} = +\sqrt{E(X^2)-\mu_{X}^2}= 0.5400\]</span></p>
+<p><span class="math display">\[ \sigma_{Y} = +\sqrt{\sigma_{Y}^2} = +\sqrt{E[(Y - \mu_{Y})^2]} = +\sqrt{E(Y^2)-\mu_{Y}^2}= 0.5686\]</span></p>
+<p><br></p>
+<p><strong>d)</strong> Evaluar las probabilidades condicionales definidas por <span class="math inline">\(P(Y ≤ X | X = 1)\)</span> y <span class="math inline">\(P(Y ≤ X | X ≤ 1)\)</span>.</p>
+<p><br></p>
+<p>Al igual que en el punto anterior, para poder hallar lo pedido es suficiente con plantear la definición de probabilidad condicional de una distribución conjunta, y considerando luego que los eventos intervinientes son disjuntos:</p>
+<p><br></p>
+<p><span class="math display">\[P(Y ≤ X | X = 1) = \frac{P(Y ≤ X) \cap P(X = 1)}{P(X = 1)} = \frac{p_{X,Y}(0,1) + p_{X,Y}(1,1)}{p_{X}(X = 1)} = 0.9900\]</span></p>
+<p><span class="math display">\[P(Y ≤ X | X ≤ 1) = \frac{P(Y ≤ X) \cap P(X ≤ 1)}{P(X ≤ 1)} = \frac{p_{X,Y}(0,0) +  p_{X,Y}(0,1) + p_{X,Y}(1,1)}{p_{X}(X ≤ 1)} = 0.9721\]</span></p>
+<p><br></p>
+<p><strong>e)</strong> Hallar el valor esperado de <span class="math inline">\(X − Y\)</span>.</p>
+<p><br></p>
+<p>Dado que el valor esperado de una combinación lineal de variables aleatorias es igual a la combinación lineal de sus valores esperados, puede escribirse:</p>
+<p><br></p>
+<p><span class="math display">\[E(X − Y) = E(X) - E(Y) = -0.0312\]</span></p>
+<p><br></p>
+<p><strong>f)</strong> ¿Son las variables <span class="math inline">\(X\)</span> y <span class="math inline">\(Y\)</span> independientes?</p>
+<p><br></p>
+<p>Las variables aleatorias <span class="math inline">\(X\)</span> y <span class="math inline">\(Y\)</span> son dependientes si se verifica que para todo par <span class="math inline">\((x, y)\)</span> se cumple que <span class="math inline">\(p_{X,Y}(x, y) = p_{X}(x)p_{Y}(y)\)</span>. Como se desprende de la tabla de distribución de probabilidad conjunta, para el par <span class="math inline">\((X=0, Y=0)\)</span> no se verifica la condición de independencia, por lo que dichas variables son dependientes.</p>
+<p><br></p>
+<p><strong>g)</strong> Hallar la matriz de covarianzas y el coeficiente de correlación de <span class="math inline">\((X,Y)\)</span>.</p>
+<p><br></p>
+<p>Nuevamente, para determinar lo pedido basta con aplicar la definición de los conceptos. Para la matriz de covarianzas, sólo resta calcular <span class="math inline">\(COV(X,Y)\)</span> dado que las varianzas de las variables aleatorias ya fueron calculadas en el punto c.</p>
+<p><br></p>
+<p><span class="math display">\[COV(X,Y) = \sigma_{XY} = E[(X - \mu_{X})(Y - \mu_{Y})] = E(XY) - \mu_{X}\mu_{Y} = 0.2799\]</span></p>
+<p><span class="math display">\[\Sigma = \begin{vmatrix} \sigma_{X}^2 &amp; \sigma_{XY} \\ \sigma_{YX} &amp; \sigma_{Y}^2 \\ \end{vmatrix} = \begin{vmatrix} 0.2916 &amp; 0.2799 \\ 0.2799 &amp; 0.3233 \\ \end{vmatrix} \]</span></p>
+<p><span class="math display">\[\rho_{XY} = \frac{\sigma_{XY}}{\sigma_{X}\sigma_{Y}} = 0.9117\]</span></p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="variable-aleatoria-continua.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
