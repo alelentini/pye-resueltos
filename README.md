@@ -1,5 +1,5 @@
-This is the absolute minimum you need to start a [bookdown](https://bookdown.org/yihui/bookdown/) book. You can find the
-preview of this book at http://seankross.com/bookdown-start/
+# Calculadora simple de distribuciones de probabilidad
 
-All of the content of this repository is licensed 
-[CC0](https://creativecommons.org/publicdomain/zero/1.0/).
+:warning: **Versión Alpha**
+
+Aplicación web que para las principales distribuciones de probabilidad permite graficarlas y obtener sus medidas descriptivas.
