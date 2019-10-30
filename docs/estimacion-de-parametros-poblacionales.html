@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Estimación de Parámetros Poblacionales | PyE - Problemas y Ejercicios Resueltos</title>
+  <meta name="description" content="Resolución de problemas y ejercicios de Probabilidad y Estadística" />
+  <meta name="generator" content="bookdown 0.12 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Estimación de Parámetros Poblacionales | PyE - Problemas y Ejercicios Resueltos" />
+  <meta property="og:type" content="book" />
+  <meta property="og:url" content="https://github.com/alelentini/pye-resueltos" />
+  
+  <meta property="og:description" content="Resolución de problemas y ejercicios de Probabilidad y Estadística" />
+  <meta name="github-repo" content="alelentini/pye-resueltos" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Estimación de Parámetros Poblacionales | PyE - Problemas y Ejercicios Resueltos" />
+  
+  <meta name="twitter:description" content="Resolución de problemas y ejercicios de Probabilidad y Estadística" />
+  
+
+<meta name="author" content="Alejandro Lentini" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="distribucion-del-muestreo-y-teorema-central-del-limite.html">
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Prefacio</a></li>
+<li class="chapter" data-level="" data-path="estadistica-descriptiva.html"><a href="estadistica-descriptiva.html"><i class="fa fa-check"></i>Estadística Descriptiva</a></li>
+<li class="chapter" data-level="" data-path="probabilidad.html"><a href="probabilidad.html"><i class="fa fa-check"></i>Probabilidad</a></li>
+<li class="chapter" data-level="" data-path="variable-aleatoria-discreta.html"><a href="variable-aleatoria-discreta.html"><i class="fa fa-check"></i>Variable Aleatoria Discreta</a></li>
+<li class="chapter" data-level="" data-path="variable-aleatoria-continua.html"><a href="variable-aleatoria-continua.html"><i class="fa fa-check"></i>Variable Aleatoria Continua</a></li>
+<li class="chapter" data-level="" data-path="variables-aleatorias-multidimensionales.html"><a href="variables-aleatorias-multidimensionales.html"><i class="fa fa-check"></i>Variables Aleatorias Multidimensionales</a></li>
+<li class="chapter" data-level="" data-path="distribucion-del-muestreo-y-teorema-central-del-limite.html"><a href="distribucion-del-muestreo-y-teorema-central-del-limite.html"><i class="fa fa-check"></i>Distribución del muestreo y Teorema Central del Límite</a></li>
+<li class="chapter" data-level="" data-path="estimacion-de-parametros-poblacionales.html"><a href="estimacion-de-parametros-poblacionales.html"><i class="fa fa-check"></i>Estimación de Parámetros Poblacionales</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">PyE - Problemas y Ejercicios Resueltos</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="estimacion-de-parametros-poblacionales" class="section level1 unnumbered">
+<h1>Estimación de Parámetros Poblacionales</h1>
+<p><br></p>
+<div id="ejercicios-guia-de-tp-6" class="section level2 unnumbered">
+<h2>Ejercicios Guía de TP</h2>
+<p><br></p>
+<div id="e7.1" class="section level3 unnumbered">
+<h3>E7.1</h3>
+<p>El artículo <a href="https://www.icevirtuallibrary.com/doi/10.1680/macr.1997.49.179.81"><em>Effects of Aggregates and Microfillers on the Flexural Properties of Concrete</em></a> reseña un estudio de las propiedades de resistencia del concreto de alta resistencia obtenido usando superplastificantes y ciertos aglutinantes. La resistencia a la compresión de ese concreto se había investigado con anterioridad, pero no se conocía mucho acerca de la resistencia a la fricción (medida de la capacidad de resistencia a la falla por flexión). Los datos siguientes sobre resistencia a la presión, <span class="math inline">\(X\)</span>, están en megapascales, MPa, y aparecieron en el artículo citado:</p>
+<p><span class="math display">\[\begin{split}
+(x_1, x_2, ..., x_n)&amp; = (5.9,\,7.2,\,7.3,\,6.3,\,8.1,\,6.8,\,7.0,\,7.6,\,6.8,\,\\
+&amp; \quad \&gt; \&gt; \&gt; 6.5,\,7.0,\,6.3,\,7.9,\,9.0,\,8.2,\,8.7,\,7.8,\,9.7,\,\\
+&amp; \quad \&gt; \&gt; \&gt; 7.4,\,7.7,\,9.7,\,7.8,\,7.7,\,11.6,\,11.3,\,11.8,\,10.7)\end{split}\]</span></p>
+<p>Calcular un estimador puntual de las siguientes magnitudes e indicar en cada caso que estimador se utilizó.</p>
+<p><br></p>
+<p><strong>a)</strong> Valor medio de resistencia a la presión para la población de todas las vigas fabricadas de esta forma, <span class="math inline">\(\mu\)</span>.</p>
+<p>Un estimador puntual de la media poblacional <span class="math inline">\(\mu\)</span> es la media muestral <span class="math inline">\(\hat{\mu} = \overline{X}\)</span>:</p>
+<p><span class="math inline">\(\boxed{\hat{\mu} = \overline{X} \enspace \rightarrow \enspace \overline{x} = \frac{1}{n}\sum_{i=1}^{n}x_i = 8.1\text{MPa}}\)</span></p>
+<p><br></p>
+<p><strong>b)</strong> Valor de la resistencia que separa al 50% más débil de las vigas del 50% más fuerte.</p>
+<p>Un estimador puntual del segundo cuartil poblacional <span class="math inline">\(q_2\)</span> es la mediana muestral <span class="math inline">\(\hat{q_2} = \tilde{X}\)</span>, y dado que <span class="math inline">\(n\)</span> es impar, su valor viene dado por la observación central en la n-tupla ordenada, esto es:</p>
+<p><span class="math inline">\(\boxed{\hat{q_2} = \tilde{X} \enspace \rightarrow \enspace \tilde{x} = x_{(n+1)/2} = x_{14} = 7.7\text{MPa}}\)</span></p>
+<p><br></p>
+<p><strong>c)</strong> Desviación típica estándar poblacional <span class="math inline">\(\sigma\)</span>.</p>
+<p>Un estimador puntual del desvío típico poblacional <span class="math inline">\(\sigma\)</span> es la dispersión estándar muestral <span class="math inline">\(\hat{\sigma} = S\)</span>, que para la muestra obtenida vale:</p>
+<p><span class="math inline">\(\boxed{\hat{\sigma} = S \enspace \rightarrow \enspace S = +\sqrt{\frac{1}{n-1}\sum_{n}(x_i - \overline{x})^2} = 1.7\text{MPa}}\)</span></p>
+<p><br></p>
+<p><strong>d)</strong> Proporción de las vigas cuya resistencia a la flexión es mayor que <span class="math inline">\(10\text{MPa}\)</span>.</p>
+<p>Al igual que en los casos anteriores, un estimador puntual para la proporción <span class="math inline">\(p\)</span> de vigas con resistencia mayor a <span class="math inline">\(10\text{MPa}\)</span> es la proporción muestral, definida como el número de vigas en la muestra con resistencia mayor a <span class="math inline">\(10\text{MPa}\)</span>, <span class="math inline">\(Y\)</span> respecto del total, por lo que:</p>
+<p><span class="math inline">\(\boxed{\hat{p} = \frac{Y}{n} \enspace \rightarrow \enspace \frac{y}{n} = \frac{4}{27} = 0.1481}\)</span></p>
+<p><br></p>
+<p><strong>e)</strong> Obtener la expresión del error estándar del estimador usado en el ítem a y calcular el error estándar estimado de dicho estimador.</p>
+<p>Aplicando la definición de <em>error estándar de un estimador</em>, <span class="math inline">\(\sigma_{\hat{\theta}}\)</span>:</p>
+<p><span class="math inline">\(\boxed{\sigma_{\hat{\mu}} = \sigma_{\overline{X}} = +\sqrt{V(\overline{X})} = \frac{\sigma}{\sqrt{n}}}\)</span></p>
+<p>Como se desconoce el valor de la desviación estándar poblacional <span class="math inline">\(\sigma\)</span>, puede obtenerse una <em>estimación del error estándar del estimador</em>, <span class="math inline">\(\hat{\sigma_{\hat{\theta}}}\)</span>, empleando un estimador del parámetro en cuestión, el cual ya se obtuvo en el punto c:</p>
+<p><span class="math inline">\(\boxed{\hat{\sigma_{\hat{\mu}}} = \frac{s}{\sqrt{n}} = 0.3194}\)</span></p>
+<p><br></p>
+</div>
+<div id="e7.2" class="section level3 unnumbered">
+<h3>E7.2</h3>
+<p>Dos economistas estiman <span class="math inline">\(\hat{\mu}\)</span> (el gasto promedio de las familias en una región determinada), con dos estimadores insesgados y estadísticamente independientes, <span class="math inline">\(\hat{\mu_1}\)</span> y <span class="math inline">\(\hat{\mu_2}\)</span>. El segundo economista es menos cuidadoso que el primero, resultando que la desviación estándar de <span class="math inline">\(\hat{\mu_2}\)</span> es el triple de la desviación estándar de <span class="math inline">\(\hat{\mu_1}\)</span>. Cuando se pregunta cómo combinar <span class="math inline">\(\hat{\mu_1}\)</span> y <span class="math inline">\(\hat{\mu_2}\)</span> para obtener un estimador global publicable, se hacen tres propuestas:</p>
+<ul>
+<li><p><span class="math inline">\(\hat{\mu_3} = \frac{1}{2}\hat{\mu_1} + \frac{1}{2}\hat{\mu_2}\)</span>: promedio simple</p></li>
+<li><p><span class="math inline">\(\hat{\mu_4} = \frac{3}{4}\hat{\mu_1} + \frac{1}{4}\hat{\mu_2}\)</span>: promedio ponderado</p></li>
+<li><p><span class="math inline">\(\hat{\mu_5} = 1\hat{\mu_1} + 0\hat{\mu_2}\)</span>: se descarta el estimador menos exacto</p></li>
+</ul>
+<p><br></p>
+<p><strong>a)</strong> ¿Cuáles están insesgadas?</p>
+<p>Un estimador es insesgado si su esperanza es igual al parámetro que busca estimar, esto es, <span class="math inline">\(E(\hat{\mu}) = \mu\)</span>. Al aplicar la esperanza a los estimadores 3 a 5, se obtiene:</p>
+<p><span class="math inline">\(E(\hat{\mu_3}) = E(\frac{1}{2}\hat{\mu_1} + \frac{1}{2}\hat{\mu_2}) = \frac{1}{2}E(\hat{\mu_1}) + \frac{1}{2}E(\hat{\mu_2}) = \frac{1}{2}\mu + \frac{1}{2}\mu = \mu\)</span></p>
+<p><span class="math inline">\(E(\hat{\mu_4}) = E(\frac{3}{4}\hat{\mu_1} + \frac{1}{4}\hat{\mu_2}) = \frac{3}{4}E(\hat{\mu_1}) + \frac{1}{4}E(\hat{\mu_2}) = \frac{3}{4}\mu + \frac{1}{4}\mu = \mu\)</span></p>
+<p><span class="math inline">\(E(\hat{\mu_5}) = E(1\hat{\mu_1} + 0\hat{\mu_2}) = E(\hat{\mu_1}) = \mu\)</span></p>
+<p><span class="math inline">\(\boxed{E(\hat{\mu_3}) = E(\hat{\mu_4}) = E(\hat{\mu_5}) = \mu \enspace \rightarrow \enspace \text{Todos los estimadores son insesgados}}\)</span></p>
+<p><br></p>
+<p><strong>b)</strong> ¿Cuál es el mejor estimador? Justificar la respuesta con el cálculo adecuado.</p>
+<p>El mejor estimador, es aquel que además de no tener sesgo (insesgado) es el más eficiente (varianza mínima).</p>
+<p><span class="math inline">\(V(\hat{\mu_3}) = V(\frac{1}{2}\hat{\mu_1} + \frac{1}{2}\hat{\mu_2}) = \frac{1}{4}V(\hat{\mu_1}) + \frac{1}{4}V(\hat{\mu_2}) = \frac{1}{4}V(\hat{\mu_1}) + \frac{9}{4}V(\hat{\mu_1}) = \frac{5}{2}V(\hat{\mu_1})\)</span></p>
+<p><span class="math inline">\(V(\hat{\mu_4}) = V(\frac{3}{4}\hat{\mu_1} + \frac{1}{4}\hat{\mu_2}) = \frac{9}{16}V(\hat{\mu_1}) + \frac{1}{16}V(\hat{\mu_2}) = \frac{9}{16}V(\hat{\mu_1}) + \frac{9}{16}V(\hat{\mu_1}) = \frac{9}{8}V(\hat{\mu_1})\)</span></p>
+<p><span class="math inline">\(V(\hat{\mu_5}) = V(1\hat{\mu_1} + 0\hat{\mu_2}) = V(\hat{\mu_1})\)</span></p>
+<p><span class="math inline">\(\boxed{min\{V(\hat{\mu_3}), V(\hat{\mu_4}), V(\hat{\mu_5})\} = V(\hat{\mu_5}) \enspace \rightarrow \enspace \hat\mu_5 \enspace \text{es el mejor estimador}}\)</span></p>
+<p><br></p>
+<p><strong>c)</strong> Proponer un mejor resultado de la forma <span class="math inline">\(\hat\mu_6 = a\hat\mu_1 + b\hat\mu_2\)</span> (insesgado y de varianza mínima).</p>
+<p>Lo que se pide es hallar el valor de los coeficientes <span class="math inline">\((a, b)\)</span> de forma tal que <span class="math inline">\(\hat\mu_6\)</span> sea insesgado y eficiente. Para ello, las ecuaciones a resolver son:</p>
+<p><span class="math inline">\(E(\hat\mu_6) = E(a\hat\mu_1 + b\hat\mu_2) = aE(\hat\mu_1) + bE(\hat\mu_2) = \mu \enspace \rightarrow \enspace a + b = 1\)</span></p>
+<p><span class="math inline">\(V(\hat\mu_6) = V(a\hat\mu_1 + b\hat\mu_2) = a^2V(\hat\mu_1) + b^2V(\hat\mu_2) = a^2V(\hat\mu_1) + 9b^2V(\hat\mu_1) \enspace \rightarrow \enspace 0 &lt; a^2 + 9b^2 &lt; 1\)</span></p>
+<p>Operamos sobre la ecuación cuadrática para dejarla expresada en términos de <span class="math inline">\(a\)</span> y hallar el valor de <span class="math inline">\((a, b)\)</span>:</p>
+<p><span class="math inline">\(a^2 + 9b^2 = a^2 + 9(1 - a)^2 = a^2 + 9 - 18a + 9a^2 = 10a^2 - 18a + 9\)</span></p>
+<p><span class="math inline">\(\frac{\partial}{\partial{a}}(10a^2 - 18a + 9) = 0 \enspace \rightarrow \enspace 20a - 18 = 0 \enspace \rightarrow \enspace a = \frac{9}{10} \enspace \rightarrow \enspace b = \frac{1}{10}\)</span></p>
+<p>Por lo que:</p>
+<p><span class="math inline">\(\boxed{\hat\mu_6 = \frac{9}{10}\hat\mu_1 + \frac{1}{10}\hat\mu_2}\)</span></p>
+<p><br></p>
+</div>
+<div id="e7.3" class="section level3 unnumbered">
+<h3>E7.3</h3>
+<p>El verdadero promedio de crecimiento <span class="math inline">\(\mu\)</span> de un tipo de planta, durante un período de un año, es idéntico al de un segundo tipo, pero la varianza de crecimiento para el primer tipo es <span class="math inline">\(\sigma^2\)</span>, mientras que para el segundo tipo es <span class="math inline">\(4\sigma^2\)</span>. Sean <span class="math inline">\(X_1, X_2, ..., X_n\)</span> las <span class="math inline">\(n\)</span> observaciones independientes de crecimiento en el primer tipo −entonces <span class="math inline">\(E(X) = μ\)</span> y <span class="math inline">\(V(X) = \sigma^2\)</span>−, y sean <span class="math inline">\(Y_1, Y_2, ..., Y_m\)</span> las <span class="math inline">\(m\)</span> observaciones independientes de crecimiento en el segundo tipo −<span class="math inline">\(E(Y) = μ\)</span> y <span class="math inline">\(V(Y) = 4\sigma^2\)</span>.</p>
+<p><strong>a)</strong> Demostrar que para cualquier <span class="math inline">\(\delta\)</span> entre 0 y 1, el estimador <span class="math inline">\(\hat{\mu} = \delta\overline{X} + (1 - \delta)\overline{Y}\)</span> es insesgado para <span class="math inline">\(\mu\)</span>.</p>
+<p>Un estimador es insesgado cuando su valor esperado coincide con el parámetro a estimar:</p>
+<p><span class="math inline">\(\boxed{E(\hat{\mu}) = E[\delta\overline{X} + (1 - \delta)\overline{Y}] = \delta E(\overline{X}) + (1 - \delta)E(\overline{Y}) = (\delta + 1 - \delta)\mu = \mu \enspace \rightarrow \enspace \hat{\mu} \enspace \text{es insesgado}}\)</span></p>
+<p><br></p>
+<p><strong>b)</strong> Para <span class="math inline">\(n\)</span> y <span class="math inline">\(m\)</span> fijos, calcular <span class="math inline">\(V(\hat{\mu})\)</span> y encontrar el valor de <span class="math inline">\(\delta\)</span> que reduzca dicha varianza al mínimo.</p>
+<p>Considerando que las variables aleatorias <span class="math inline">\(\overline{X}\)</span> y <span class="math inline">\(\overline{Y}\)</span> son independientes, su covarianza es cero por lo que:</p>
+<p><span class="math inline">\(V(\hat{\mu}) = V[\delta\overline{X} + (1 - \delta)\overline{Y}] = \delta^2V(\overline{X}) + (1 - \delta)^2V(\overline{Y}) = \delta^2\frac{\sigma^2}{n} + 4(1 - \delta)^2\frac{\sigma^2}{m}\)</span></p>
+<p>Para encontrar el valor de <span class="math inline">\(\delta\)</span> que reduzca dicha varianza al mínimo:</p>
+<p><span class="math inline">\(\boxed{\frac{\partial{V(\hat{\mu})}}{\partial{\delta}} = 0 \enspace \rightarrow \enspace \frac{2\delta\sigma^2}{n} - \frac{8(1 - \delta)\sigma^2}{m} = 0 \enspace \rightarrow \enspace \delta = \frac{n}{\frac{m}{4}+n}}\)</span></p>
+<p><br></p>
+</div>
+<div id="e7.4" class="section level3 unnumbered">
+<h3>E7.4</h3>
+<p>Sea <span class="math inline">\(X\)</span> una variable aleatoria binomial con parámetros <span class="math inline">\(n\)</span> y <span class="math inline">\(p\)</span>.</p>
+<p><strong>a)</strong> Demostrar que la proporción muestral <span class="math inline">\(\hat{p}=\frac{X}{n}\)</span> es un estimador insesgado de <span class="math inline">\(p\)</span>.</p>
+<p>Recordando que un estimador es insesgado si su valor esperado coincide con el parámetro a estimar, esto es <span class="math inline">\(E(\hat{\theta})=\theta\)</span>, y sabiendo que el valor esperado de la variable <span class="math inline">\(X \sim Bin(n, p)\)</span> es <span class="math inline">\(E(X) = np\)</span>, podemos plantear:</p>
+<p><span class="math inline">\(\boxed{E(\hat{p}) = E(\frac{X}{n}) = \frac{1}{n}E(X) = p \enspace \rightarrow \enspace \hat{p} \enspace \text{es insesgado}}\)</span></p>
+<p><br></p>
+<p><strong>b)</strong> Demostrar que el error estándar es <span class="math inline">\(\sigma_{\hat{p}} = \sqrt{\frac{p(1-p)}{n}}\)</span>, y que nunca supera el valor <span class="math inline">\(\sqrt{\frac{1}{4n}}\)</span>.</p>
+<p>El error estándar de un estimador <span class="math inline">\(\hat\theta\)</span> es su desvío estándar, <span class="math inline">\(\sigma_{\hat\theta} = \sqrt{V(\hat\theta)}\)</span>, y sabiendo que la varianza de la variable <span class="math inline">\(X \sim Bin(n, p)\)</span> es <span class="math inline">\(V(X) = np(1 - p)\)</span>, podemos escribir:</p>
+<p><span class="math inline">\(\boxed{V(\hat{p}) = V(\frac{X}{n}) = \frac{1}{n^2}V(X) = \frac{p(1 - p)}{n} \enspace \rightarrow \enspace \sigma_{\hat{p}} = \sqrt{\frac{p(1 - p)}{n}}}\)</span></p>
+<p>Para encontrar el máximo del error estándar, derivamos la expresión anterior:</p>
+<p><span class="math inline">\(\frac{\partial\sigma_\hat{p}}{\partial{p}} = 0 \enspace \rightarrow \enspace \frac{1}{2\sqrt{n}}(p - p^2)(1 - 2p) = \frac{1}{2\sqrt{n}}p(2p^2 - 3p + 1) = 0 \enspace \rightarrow \enspace p \in \{0, \frac{1}{2},1\}\)</span></p>
+<p>Para <span class="math inline">\(p = 0\)</span> y <span class="math inline">\(p = 1\)</span> el error es mínimo (cero), por lo que el máximo valor del error estándar viene dado cuando <span class="math inline">\(p = \frac{1}{2}\)</span>:</p>
+<p><span class="math inline">\(\boxed{\sigma_{\hat{p}max}: p = \frac{1}{2} \enspace \rightarrow \enspace \sigma_{\hat{p}max} = \sqrt{\frac{1}{4n}}}\)</span></p>
+<p>Este resultado puede apreciarse en el siguiente gráfico:</p>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-1"></span>
+<img src="files/7.4_01.PNG" alt="Error estándar del estimador en función del parámetro $p$"  />
+<p class="caption">
+Figura 1: Error estándar del estimador en función del parámetro <span class="math inline">\(p\)</span>
+</p>
+</div>
+<p><strong>c)</strong> Un fabricante de automóviles ha desarrollado un nuevo tipo de defensas, las cuales absorben impactos con menos averías que las defensas anteriores. El fabricante ha utilizado esta defensa en una secuencia de 25 choques controlados contra un muro, cada uno a 16 kilómetros por hora, usando uno de sus modelos compactos. Sea <span class="math inline">\(X\)</span> el número de choques que resultan sin daño visible al automóvil, y el valor observado <span class="math inline">\(x = 15\)</span>. Estimar la proporción <span class="math inline">\(p\)</span> de todos los choques que resultan sin daño, equivalente a <span class="math inline">\(p = P(\text{sin daño en un solo choque})\)</span>, y calcular el error estimado.</p>
+<p>Empleando algunas definiciones de los puntos anteriores, podemos obtener lo pedido planteando:</p>
+<p><span class="math inline">\(\boxed{\hat{p} = \frac{X}{n} \enspace \rightarrow \enspace \frac{x}{n} = \frac{15}{25} \enspace \rightarrow \hat{p} = 0.6}\)</span></p>
+<p><span class="math inline">\(\boxed{\hat\sigma_{\hat{p}} = \sqrt{\frac{\hat{p}(1 - \hat{p})}{n}} \enspace \rightarrow \enspace \hat\sigma_{\hat{p}} = 0.098}\)</span></p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="distribucion-del-muestreo-y-teorema-central-del-limite.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": false,
+"twitter": false,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": null,
+"history": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection",
+"toc": null,
+"scroll_highlight": true
+},
+"toolbar": {
+"position": "fixed"
+},
+"search": true
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
