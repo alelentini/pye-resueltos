@@ -2,7 +2,7 @@
 :author: Alejandro Lentini 
 :email: alentini@frh.utn.edu.ar
 :revdate: 2023-06-24
-:imagesdir: ./images
+:imagesdir: ./
 :stem: latexmath
 
 _Fuente_: UTN - FRH - Guía de Ejercitación Integradora Unidades 1, 2, 3 y 4 - 2023 - Ejercicio 2
