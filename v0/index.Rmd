@@ -1,0 +1,80 @@
+--- 
+title: "Probabilidad y Estadística - Problemas y Ejercicios Resueltos"
+author: "Alejandro Lentini"
+date: ""
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [book.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: alelentini/pye-resueltos
+url: "https://github.com/alelentini/pye-resueltos"
+description: "Resolución de problemas y ejercicios de Probabilidad y Estadística"
+---
+
+# Prefacio {-}
+
+
+```{block, type='warning_red'}
+**TRABAJO EN PROGRESO**
+
+**Se advierte al lector de posibles errores.**
+
+Notificaciones sobre cualquier error o sugerencias son bienvenidos:  [pye.utnfrh@gmail.com](mailto:pye.utnfrh@gmail.com)
+```
+
+<br>
+
+El presente trabajo contiene la resolución de ejercicios y problemas correspondientes a las guías de TP de la asignatura Probabilidad y Estadística, así como también incluye resoluciones a ejercicios y problemas de otras fuentes (exámenes parciales y finales, libros de texto, etc.).
+
+La resolución pone foco en el planteo del problema, comentando las diferentes estrategias de solución posibles. Los pasos intermedios de la resolución que involucran operaciones matemáticas ya conocidas por el alumno y que no corresponden a conceptos de la asignatura no se incluyen. Cuando el ejercicio o problema lo ameritan, se comenta su relación con aplicaciones prácticas del ejercicio profesional del ingeniero.
+
+<br>
+
+```{block, type='warning_yellow'}
+**La utilización de esta guía de resueltos debe ser un complemento en el proceso de aprendizaje del alumno, y bajo ningún punto de vista debe ser empleada como sustituto de la necesaria actividad de plantear y resolver problemas en forma individual.**
+
+**Se aconseja que el alumno realice la resolución de los ejercicios primero por su cuenta, y recién luego la compare con lo propuesto en esta guía.**
+```
+
+<br>
+
+# Planteo y resolución de problemas {-}
+
+Antes de comenzar con la resolución de las guías de TP, se recomienda al alumno **leer y reflexionar acerca de la actividad de plantear y resolver problemas**:
+
+* [Principales conceptos y sugerencias](www.X.com)
+
+* Un excelente trabajo acerca del planteo y resolución de problemas es el libro del matemático húngaro George Pólya, *Cómo plantear y resolver problemas*. 
+
+<br>
+
+# Notación {-}
+
+A continuación se describe la notación empleada en este trabajo (símbolos y abreviaturas). 
+
+Símbolo                             Significado
+-----------                         ------------
+$X, Y, Z, ...$                      Variables aleatorias
+$x, y, z, ...$                      Valores observados de las variables aleatorias $X, Y, Z, ...$
+$p(x)$                              Función masa de probabilidad, *fmp*
+$f(x)$                              Función densidad de probabilidad, *fdp*
+$p_{X}(x), f_{X}(x)$                Función marginal de probabilidad de $X$
+$p_{X,Y}(X,Y)$                      Función de probabilidad conjunta o bivariada de las variables $X$ y $Y$
+$F(X)$                              Función de distribución acumulada, *fda*
+$E(X)$                              Valor esperado de $X$
+$\mu_{X}$                           Media poblacional de $X$
+$\overline{X}$                      Media muestral de $X$
+$V(X), Var(X)$                      Varianza de $X$
+$\sigma^2_{X}$                      Varianza poblacional de $X$
+$S^2_{X}$                           Varianza muestral de $X$
+$\sigma_{X}$                        Desvío estándar o dispersión poblacional de $X$
+$s^2$                               Desvío estándar o dispersión muestral de $X$
+$COV(X,Y)$                          Covarianza de $X$ y $Y$
+$\sigma^2_{XY}$                     Covarianza poblacional de $X$ y $Y$
+$S^2_{XY}$                          Covarianza muestral de $X$ y $Y$
+$\rho_{X,Y}$                        Coeficiente de correlación de Pearson poblacional de $X$ y $Y$
+$R_{X,Y}$                           Coeficiente de correlación de Pearson muestral de $X$ y $Y$
+$\theta$                            Parámetro genérico de una distribución de probabilidad
+$\hat{\theta} = \Theta$             Estimador del parámetro $\theta$
+$\hat{\theta} = a \in \mathbb{R}$   Estimación puntual del parámetro $\theta$ a través del estimador $\Theta$

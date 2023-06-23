@@ -1,0 +1,28 @@
+book_filename: "PyE_Problemas_y_Ejercicios_Resueltos"
+
+chapter_name: ""
+
+repo: https://github.com/alelentini/pye-resueltos
+
+output_dir: docs
+
+clean: [packages.bib, bookdown.bbl]
+
+delete_merged_file: True
+
+language:
+  label:
+    fig: 'Figura '
+    tab: 'Tabla '
+    eq: 'Ecuación '
+    thm: 'Teorema '
+    lem: 'Lema '
+    cor: 'Corolario '
+    prp: 'Proposición '
+    cnj: 'Conjetura '
+    def: 'Definición '
+    exm: 'Ejemplo '
+    exr: 'Ejercicio '
+    proof: 'Prueba. '
+    remark: 'Comentario. '
+    solution: 'Solución. '
