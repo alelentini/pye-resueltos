@@ -1,13 +1,11 @@
-= Ejercicio 2
+= UTN - FRH - Guía de Ejercitación Integradora Unidades 1, 2, 3 y 4 - 2023 - Ejercicio 2
 :author: Alejandro Lentini 
 :email: alentini@frh.utn.edu.ar
 :revdate: 2023-06-24
 :imagesdir: ./images
 :stem: latexmath
-:toc:
-:toc-title: Contenidos
 
-*Guía de ejercicios integradores - Unidades 1 a 4*
+_Fuente_: UTN - FRH - Guía de Ejercitación Integradora Unidades 1, 2, 3 y 4 - 2023 - Ejercicio 2
 
 
 == Enunciado
@@ -23,7 +21,7 @@ Dos máquinas rectificadoras A y B trabajan de tal manera que cuando se ajusta e
 
 == Planteo
 
-image::tp_i_1-4_e_2_1.png[align="center"]
+image::gei_1-4_e2_1.png[align="center"]
 
 +++<br>+++
 
@@ -69,7 +67,7 @@ Selección al azar de una pieza:
 
 - El siguiente _diagrama de venn_ representa los eventos definidos:
 
-image::tp_i_1-4_e_2_2.png[align="center"]
+image::gei_1-4_e2_2.png[align="center"]
 
 
 == Resolución
