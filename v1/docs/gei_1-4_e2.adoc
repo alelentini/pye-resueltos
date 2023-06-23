@@ -21,7 +21,7 @@ Dos máquinas rectificadoras A y B trabajan de tal manera que cuando se ajusta e
 
 == Planteo
 
-image::gei_1-4_e2_1.png[align="center"]
+image::gei_1-4_e2_1.PNG[align="center"]
 
 +++<br>+++
 
@@ -67,7 +67,7 @@ Selección al azar de una pieza:
 
 - El siguiente _diagrama de venn_ representa los eventos definidos:
 
-image::gei_1-4_e2_2.png[align="center"]
+image::gei_1-4_e2_2.PNG[align="center"]
 
 
 == Resolución
