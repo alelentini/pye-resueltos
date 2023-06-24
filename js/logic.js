@@ -20,7 +20,7 @@ function main() {
     document.getElementById('adoc-contents').innerHTML = html;
     console.log(html)
     MathJax.typeset();*/
-    fetch('https://raw.githubusercontent.com/alelentini/pye-resueltos/master/v1/docs/gei_1-4_e2.adoc') 
+    fetch('https://raw.githubusercontent.com/alelentini/pye-resueltos/master/docs/gei_1-4_e2.adoc') 
         .then(response => response.text())
         .then(result => console.log(result));
 }
