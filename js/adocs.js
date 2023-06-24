@@ -1,9 +1,5 @@
-//*****************************************************************************************************************************
-// Configuration Objects
-//*****************************************************************************************************************************
-
-var aDocs = [
-	{'name': 'gei_1-4_e2', 'parentSecId': 90, 'contents': `= UTN - FRH - Guía de Ejercitación Integradora Unidades 1, 2, 3 y 4 - 2023 - Ejercicio 2
+aDocs = [
+	{"name": "gei_1-4_e2", "contents": `= Ejercicio 2
 :author: Alejandro Lentini 
 :email: alentini@frh.utn.edu.ar
 :revdate: 2023-06-24
@@ -41,13 +37,13 @@ Proceso de producción:
 
 ** stem:[Q_A]: producción (cantidad de piezas producidas), [unidades].
 
-** stem:[D_A]: v.a.c que representa el diámetro rectificado por la rectificadora A, [mm] stem:[\\rightarrow D_A \sim N(\mu_A=5;\sigma_A=0.01)].
+** stem:[D_A]: v.a.c que representa el diámetro rectificado por la rectificadora A, [mm] stem:[\\rightarrow D_A \\sim N(\\mu_A=5;\\sigma_A=0.01)].
 
 - Rectificadora B:
 
 ** stem:[Q_B]: producción (cantidad de piezas producidas), [unidades].
 
-** stem:[D_B]: v.a.c que representa el diámetro rectificado por la rectificadora A, [mm] stem:[\rightarrow D_B \sim N(\mu_B=5;\sigma_B=0.02)].
+** stem:[D_B]: v.a.c que representa el diámetro rectificado por la rectificadora A, [mm] stem:[\\rightarrow D_B \\sim N(\\mu_B=5;\\sigma_B=0.02)].
 
 - stem:[Q_T]: producción conjunta de ambas rectificadoras: stem:[Q_T = Q_A + Q_B], [unidades].
 
@@ -61,15 +57,15 @@ Selección al azar de una pieza:
 
 - stem:[C]: evento que se produce cuando una pieza, seleccionada al azar de la producción conjunta de ambas rectificadoras, se encuentra dentro de especificación (_cumple o conforme_).
 
-- stem:[\bar{C}]: evento que se produce cuando una pieza, seleccionada al azar de la producción conjunta de ambas rectificadoras, se encuentra fuera de especificación (_no cumple o no conforme_).
+- stem:[\\bar{C}]: evento que se produce cuando una pieza, seleccionada al azar de la producción conjunta de ambas rectificadoras, se encuentra fuera de especificación (_no cumple o no conforme_).
 
-- stem:[C] y stem:[\bar{C}] son _sucesos disjuntos_ stem:[\rightarrow C \cap \bar{C} = \emptyset]
+- stem:[C] y stem:[\\bar{C}] son _sucesos disjuntos_ stem:[\\rightarrow C \\cap \\bar{C} = \\emptyset]
 
 - stem:[A]: evento que se produce cuando una pieza, seleccionada al azar de la producción conjunta de ambas rectificadoras, fue rectificada por la rectificadora A.
 
 - stem:[B]: evento que se produce cuando una pieza, seleccionada al azar de la producción conjunta de ambas rectificadoras, fue rectificada por la rectificadora B.
 
-- stem:[A] y stem:[B] constituyen una _partición_ del _espacio muestral_ stem:[E \rightarrow A \cap B = \emptyset \land A \cup B = E]
+- stem:[A] y stem:[B] constituyen una _partición_ del _espacio muestral_ stem:[E \\rightarrow A \\cap B = \\emptyset \\land A \\cup B = E]
 
 - El siguiente _diagrama de venn_ representa los eventos definidos:
 
@@ -78,5 +74,33 @@ image::gei_1-4_e2_2.PNG[align="center"]
 
 == Resolución
 
-`}
+`},
+	{"name": "indice", "contents": `= Índice
+:author: Alejandro Lentini 
+:email: alentini@frh.utn.edu.ar
+:revdate: 2023-06-24
+:imagesdir: ./images
+:showtitle: true
+:stem: latexmath
+
+== Introducción
+
+
+
+== Guías de Ejercitación
+
+
+
+=== Ejercitación Integradora Unidades 1, 2, 3 y 4 - 2023
+
+`},
+	{"name": "introduccion", "contents": `= Introducción
+:author: Alejandro Lentini 
+:email: alentini@frh.utn.edu.ar
+:revdate: 2023-06-24
+:imagesdir: ./images
+:showtitle: true
+:stem: latexmath
+
+XXX`},
 ];

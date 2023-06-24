@@ -12,17 +12,13 @@
 // Main function to be executed after page load
 function main() {
 
-    let html = '';
-    //html = Asciidoctor().convert('= Document title', { 'safe': 'server', 'attributes': { 'showtitle': true, 'icons': 'font' } });
-    //html = Asciidoctor().convert('latexmath:[a+b]');
-    //html = Asciidoctor().convert(aDocs[0].contents, { 'safe': 'server', 'attributes': { 'showtitle': true, 'icons': 'font' } });
-    /*html = Asciidoctor().convert(aDocs[0].contents);
-    document.getElementById('adoc-contents').innerHTML = html;
-    console.log(html)
-    MathJax.typeset();*/
-    fetch('https://raw.githubusercontent.com/alelentini/pye-resueltos/master/docs/gei_1-4_e2.adoc') 
-        .then(response => response.text())
-        .then(result => console.log(result));
+    const params = new URLSearchParams(location.search);
+    let aDocName = params.get('aDoc');
+    if (aDocName === null || aDocName === '') {
+        aDocName = 'indice';
+    }
+    aDoc = aDocs.find(aDoc => aDoc.name === aDocName);
+    updateDocContents(aDoc.contents);
 }
 
 
@@ -37,3 +33,22 @@ function main() {
 /* UI Functions 
 /**************************************************************************************************************************************************/
 
+function updateDocContents(contents) {
+
+    document.getElementById('adoc-contents').innerHTML = Asciidoctor().convert(contents);
+    MathJax.typeset();
+}
+
+
+
+/**************************************************************************************************************************************************
+/* Test
+/**************************************************************************************************************************************************/
+
+function test() {
+
+    let adocName = 'gei_1-4_e2';
+    fetch(`https://raw.githubusercontent.com/alelentini/pye-resueltos/master/docs/${adocName}.adoc`) 
+        .then(response => response.text())
+        .then(result => updateDocContents(result));
+}

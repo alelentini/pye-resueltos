@@ -1,0 +1,9 @@
+= Introducción
+:author: Alejandro Lentini 
+:email: alentini@frh.utn.edu.ar
+:revdate: 2023-06-24
+:imagesdir: ./images
+:showtitle: true
+:stem: latexmath
+
+XXX

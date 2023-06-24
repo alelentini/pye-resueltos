@@ -17,7 +17,16 @@
 	<body onload='main()'>
 		<!-- Page content -->
 		<div class='container-fluid'>
-			<div id='contents'>
+			<!-- Title & Navigation Bar -->
+			<div id='title-div' class='sticky-top'>
+				<!-- Title -->
+				<div class='row bg-secondary text-white'>
+					<h5 class='doc-title'>Resueltos Probabilidad y Estadística</h5>
+				</div>
+				<!-- Navigation -->
+				<div class='row'></div>
+			</div>
+			<div id='contents' style='margin-top:10px'>
 				<!-- AsciiDoc document contents -->
 				<div id='adoc-contents' class='row'></div>
 			</div>
@@ -28,9 +37,12 @@
 		<!-- Bootstrap -->
 		<script src='libraries/bootstrap-5.2.3/js/bootstrap.bundle.min.js'></script>
 		<!-- MathJax -->
-		<script src='libraries/mathjax-3.0.5/js/tex-mml-chtml.js'></script>
+		<!-- <script src='libraries/mathjax-3.0.5/js/tex-mml-chtml.js'></script> -->
+		<script src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'></script>
 		<!-- AsciiDoctor.js -->
 		<script src='libraries/asciidoctor-2.2.6/js/asciidoctor.min.js'></script>
+		<!-- AsciiDocs files -->
+		<script src='js/adocs.js'></script>
 		<!-- Logic -->
 		<script src='js/logic.js'></script>
 	</body>
