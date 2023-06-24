@@ -1,4 +1,9 @@
-= Ejercicio 2
+//*****************************************************************************************************************************
+// Configuration Objects
+//*****************************************************************************************************************************
+
+var aDocs = [
+	{'name': 'gei_1-4_e2', 'parentSecId': 90, 'contents': `= UTN - FRH - Guía de Ejercitación Integradora Unidades 1, 2, 3 y 4 - 2023 - Ejercicio 2
 :author: Alejandro Lentini 
 :email: alentini@frh.utn.edu.ar
 :revdate: 2023-06-24
@@ -36,7 +41,7 @@ Proceso de producción:
 
 ** stem:[Q_A]: producción (cantidad de piezas producidas), [unidades].
 
-** stem:[D_A]: v.a.c que representa el diámetro rectificado por la rectificadora A, [mm] stem:[\rightarrow D_A \sim N(\mu_A=5;\sigma_A=0.01)].
+** stem:[D_A]: v.a.c que representa el diámetro rectificado por la rectificadora A, [mm] stem:[\\rightarrow D_A \sim N(\mu_A=5;\sigma_A=0.01)].
 
 - Rectificadora B:
 
@@ -46,9 +51,9 @@ Proceso de producción:
 
 - stem:[Q_T]: producción conjunta de ambas rectificadoras: stem:[Q_T = Q_A + Q_B], [unidades].
 
-** stem:[\frac{Q_A}{Q_T} = 0.8]
+** stem:[\\frac{Q_A}{Q_T} = 0.8]
 
-** stem:[\frac{Q_B}{Q_T} = 0.2]
+** stem:[\\frac{Q_B}{Q_T} = 0.2]
 
 +++<br>+++
 
@@ -73,3 +78,5 @@ image::gei_1-4_e2_2.PNG[align="center"]
 
 == Resolución
 
+`}
+];

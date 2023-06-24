@@ -1,0 +1,207 @@
+/* Colors */
+.red {color:red;}
+.green {color:green;}
+.gold {color:goldenrod;}
+
+/* Text */
+.text-60 {font-size: 60%;}
+.text-70 {font-size: 70%;}
+.text-80 {font-size: 80%;}
+.text-90 {font-size: 90%;}
+.caption {
+    font-style: italic;
+    color:grey;
+}
+
+/* HTML Document */
+body {
+    font-family: Verdana, Arial, sans-serif;
+}
+
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+/* Horizontal rule */
+hr {
+    padding-bottom: 20px;
+    border-bottom: 3px solid grey;
+}
+
+/* Document title*/
+.doc-title {
+    font-size: 2.5em;
+    color:darkslateblue;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+/* Navigation title*/
+.nav-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color:rgb(101, 101, 101);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.toc-root {
+    font-weight: bold;
+    color:darkblue;
+}
+
+.toc-active {
+    font-weight: bold;
+    background-color: lightgray;
+    border-left: 5px solid darkred;
+}
+
+.toc-parent-active {
+    font-weight: bold;
+    background-color: rgb(231, 231, 231);
+    border-left: 5px solid darkcyan;
+}
+
+
+/* Overview elements style */
+.overview-toc p {
+    line-height: 1;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.overview-toc-l1 {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.overview-toc-l2 {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.overview-toc-l3 {
+    font-size: 1.1em;
+}
+
+.overview-toc-l4 {
+    font-size: 1em;
+    font-style: italic;
+}
+
+
+/* Cards style */
+.card-header {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.card-header h5 {
+    margin-bottom: 0.8em;
+    padding-bottom: 0;
+}
+
+.card-title {
+    margin-top: 0.8em;
+    padding-top: 0;
+}
+
+.card p {
+    font-size: 0.8em;
+    line-height: 1.5;
+    margin-bottom: 0.8em;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.card ul, .card ol {
+    font-size: 0.8em;
+    line-height: 1;
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+}
+
+.card li {
+    margin-top: 0.8em;
+    line-height: 1.8;
+}
+
+.card ul ul {
+    font-size: 1em;
+}
+
+/* Duties, skills and knowledge tables */
+.table-skills p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 0.8em;
+}
+
+.table-skills a {
+    font-size: 0.8em;
+}
+
+.table-skills ul, .table-skills ol {
+    font-size: 1em;
+    line-height: 1;
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+}
+
+.table-skills li {
+    margin-top: 1em;
+    line-height: 1.8;
+}
+
+.table-skills-header {
+    margin-top: 0.8em;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+
+/* AsciiDoc Style */
+
+/* Paragraphs */
+p {
+    font-size: 1.2em;
+    line-height: 2;
+}
+
+/* Lists */
+li {
+    line-height: 4.5;
+}
+
+/* Images */
+.imageblock {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.imageblock .title {
+    margin-top: 20px;
+}
+
+/* Quotes */
+.quoteblock blockquote, .quoteblock p {
+    font-size: 1.1em;
+    line-height: 2;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* Sidebars */
+.sidebarblock {
+    font-size: 1.1em;
+    line-height: 2;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
