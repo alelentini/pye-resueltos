@@ -12,7 +12,7 @@ _Fuente_: UTN - FRH - Guía de Ejercitación Integradora Unidades 1, 2, 3 y 4 - 
 
 == Enunciado
 
-Dos máquinas rectificadoras A y B trabajan de tal manera que cuando se ajusta el diámetro requerido para la pieza rectifican según una distribución normal de valor medio 5mm y desviaciones estándar de 0.01mm y 0.02mm, respectivamente. La máquina A hace el 80% del trabajo y la B el resto. Se mezclan las piezas rectificadas y se supone que una pieza es buena si el diámetro D de una pieza está comprendido entre 5.00 ± 0.01mm.
+Dos máquinas rectificadoras A y B trabajan de tal manera que cuando se ajusta el diámetro requerido para la pieza rectifican según una distribución normal de valor medio 5mm y desviaciones estándar de 0.01mm y 0.02mm, respectivamente. La máquina A hace el 80% del trabajo y la B el resto. Se mezclan las piezas rectificadas y se supone que una pieza es buena si el diámetro D de una pieza está comprendido entre 5.00 y 5.02mm.
 
 . ¿Cuál es la probabilidad de que una pieza extraída el azar resulte fuera de especificación?
 . Si una pieza extraída al azar resulta fuera de especificación, ¿cuál es la probabilidad de que haya sido rectificada por la máquina B?
@@ -57,9 +57,9 @@ Selección al azar de una pieza:
 
 - stem:[C]: evento que se produce cuando una pieza, seleccionada al azar de la producción conjunta de ambas rectificadoras, se encuentra dentro de especificación (_cumple o conforme_).
 
-- stem:[\\bar{C}]: evento que se produce cuando una pieza, seleccionada al azar de la producción conjunta de ambas rectificadoras, se encuentra fuera de especificación (_no cumple o no conforme_).
+- stem:[\\overline{C}]: evento que se produce cuando una pieza, seleccionada al azar de la producción conjunta de ambas rectificadoras, se encuentra fuera de especificación (_no cumple o no conforme_).
 
-- stem:[C] y stem:[\\bar{C}] son _sucesos disjuntos_ stem:[\\rightarrow C \\cap \\bar{C} = \\emptyset]
+- stem:[C] y stem:[\\overline{C}] son _sucesos disjuntos_ stem:[\\rightarrow C \\cap \\overline{C} = \\emptyset]
 
 - stem:[A]: evento que se produce cuando una pieza, seleccionada al azar de la producción conjunta de ambas rectificadoras, fue rectificada por la rectificadora A.
 
@@ -74,7 +74,70 @@ image::gei_1-4_e2_2.PNG[align="center"]
 
 == Resolución
 
-`},
++++<p class='pregunta'>1. ¿Cuál es la probabilidad de que una pieza extraída el azar resulte fuera de especificación?<p>+++
+
+. Según los datos del problema, una pieza estará fuera de especificación, cuando el diámetro D no se halle comprendido entre 5.00 y 5.02mm.
+
+. En términos del planteo y modelado realizado, una pieza estará fuera de especificación, cuando ocurra el evento stem:[\\overline{C}], por lo que la probabilidad solicitada es la probabilidad de ocurrencia de este evento, esto es, stem:[P(\\overline{C})].
+
+. El evento stem:[\\overline{C}] ocurre cuando la pieza está fuera de especificación y fue rectificada por la máquina A, o bien cuando la pieza está fuera de especificación y fue rectificada por la máquina B, esto es, stem:[\\overline{C} = (\\overline{C} \\cap A) \\cup (\\overline{C} \\cap B)], donde se observa que ambos eventos son _disjuntos_.
+
+. stem:[P(\\overline{C}) = P[(\\overline{C} \\cap A) \\cup (\\overline{C} \\cap B)\\] = P(\\overline{C} \\cap A)) + P(\\overline{C} \\cap B) = P(\\overline{C} | A)P(A) + P(\\overline{C} | B)P(B)]
+
+.. stem:[P(A) = \\frac{Q_A}{Q_T} = 0.8]
+
+.. stem:[P(B) = \\frac{Q_B}{Q_T} = 0.2]
+
+.. stem:[P(\\overline{C} | A) = P(D_A < 5 \\cap D_A > 5.02) = F_{D_A}(5) + 1 - F_{D_A}(5.02) \\approx 0.5000 + 1 - 0.9772 \\approx 0.5228]
+
+.. stem:[P(\\overline{C} | B) = P(D_B < 5 \\cap D_B > 5.02) = F_{D_B}(5) + 1 - F_{D_B}(5.02) \\approx 0.5000 + 1 - 0.8413 \\approx 0.6587]
+
+.. stem:[P(\\overline{C}) = P(\\overline{C} | A)P(A) + P(\\overline{C} | B)P(B) \\approx 0.5228 * 0.8 + 0.6587 * 0.2 \\approx 0.4182 + 0.1317 \\approx 0.5499]
+
+.. stem:[\\boxed{P(\\overline{C}) \\approx 0.5499}]
+
+image::gei_1-4_e2_3.PNG[align="center"]
+
++++<hr>+++
++++<br>+++
+
++++<p class='pregunta'>2. Si una pieza extraída al azar resulta fuera de especificación, ¿cuál es la probabilidad de que haya sido rectificada por la máquina B?<p>+++
+
+. Si una pieza extraída al azar resulta fuera de especificación, ya ocurrió el evento stem:[\\overline{C}], por lo que la probabilidad pedida es la siguiente _probabilidad condicional_ stem:[P(B | \\overline{C})], que se obtiene empleando el _teorema de Bayes_.
+
+. stem:[P(B | \\overline{C}) = \\frac{P(B \\cap \\overline{C})}{P(\\overline{C})} = \\frac{P(\\overline{C} | B)P(B)}{P(\\overline{C})} \\approx \\frac{0.6587 * 0.2}{0.5499} \\approx 0.2395]
+
+. stem:[\\boxed{P(B | \\overline{C}) \\approx 0.2395}]
+
++++<hr>+++
++++<br>+++
+
++++<p class='pregunta'>3.a Si se toma una muestra de 10 artículos de la mezcla de los fabricados por ambas máquinas, ¿cuál es la probabilidad de encontrar una pieza buena?<p>+++
+
+. Si la producción conjunta de ambas rectificadoras es mucho mayor que la muestra de 10 piezas, esto es, stem:[Q_T >> 10], entonces dicha extracción puede ser modelizada mediante un _proceso de Bernoulli_, de forma tal que:
+
+.. Cantidad de _ensayos Bernoulli_: stem:[n = 10].
+
+.. _Probabilidad de éxito_ (la pieza cumple con la especificación): stem:[p=1-P(\\overline{C})=0.4501]
+
+.. stem:[X]: v.a.c que representa la cantidad de piezas buenas obtenidas en la muestra de tamaño stem:[\\rightarrow X \\sim Bi(n=10;p=0.4501)]
+
+. Con la modelización anterior, la probabilidad de encontrar una pieza buena en la muestra seleccionada queda definida por stem:[P(X=1)].
+
+. stem:[P(X=1) = bi(x=1;n=10;p=0.4501) \\approx 0.0207]
+
+. stem:[\\boxed{P(X=1) \\approx 0.0207}]
+
++++<hr>+++
++++<br>+++
+
++++<p class='pregunta'>3.b Si se toma una muestra de 10 artículos de la mezcla de los fabricados por ambas máquinas, ¿cuál es la probabilidad de encontrar por lo menos una pieza buena?<p>+++
+
+. Cnsiderando la modelización indicada en la pregunta 3.a, la probabilidad solicitada viene dada por stem:[P(X \\leq 1)].
+
+. stem:[P(X \\leq 1) = 1 - F_X(0) = 1 - bi(x=0;n=10;p=0.4501) \\approx 1 - 0.0025 \\approx 0.9975]
+
+. stem:[\\boxed{P(X \\leq 1) \\approx 0.9975}]`},
 	{"name": "indice", "contents": `= Índice
 :author: Alejandro Lentini 
 :email: alentini@frh.utn.edu.ar

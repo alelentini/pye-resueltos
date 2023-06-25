@@ -31,6 +31,13 @@ hr {
     border-bottom: 3px solid grey;
 }
 
+
+/* Preguntas */
+.pregunta {
+    background-color: lightblue;
+    font-weight: bold;
+}
+
 /* Document title*/
 .doc-title {
     color:white;
