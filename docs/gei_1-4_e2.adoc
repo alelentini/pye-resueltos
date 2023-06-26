@@ -36,13 +36,21 @@ Proceso de producción:
 
 ** stem:[Q_A]: producción (cantidad de piezas producidas), [unidades].
 
-** stem:[D_A]: v.a.c que representa el diámetro rectificado por la rectificadora A, [mm] stem:[\rightarrow D_A \sim N(\mu_A=5;\sigma_A=0.01)].
+** stem:[D_A]: v.a.c que representa el diámetro rectificado por la rectificadora A, [mm].
+
+*** stem:[R_{D_A} = \left\lbrace d_A: d_A \in \mathbb{R} \right\rbrace] que constituye un recorrido _matemáticamente idealizado_ ya que en la realidad estaría sujeto a un intervalo cerrado de stem:[\mathbb{R} > 0].
+
+*** stem:[D_A \sim N(\mu_A=5;\sigma_A=0.01)]
 
 - Rectificadora B:
 
 ** stem:[Q_B]: producción (cantidad de piezas producidas), [unidades].
 
-** stem:[D_B]: v.a.c que representa el diámetro rectificado por la rectificadora A, [mm] stem:[\rightarrow D_B \sim N(\mu_B=5;\sigma_B=0.02)].
+** stem:[D_B]: v.a.c que representa el diámetro rectificado por la rectificadora B, [mm].
+
+*** stem:[R_{D_B} = \left\lbrace d_B: d_B \in \mathbb{R} \right\rbrace] que constituye un recorrido _matemáticamente idealizado_ ya que en la realidad estaría sujeto a un intervalo cerrado de stem:[\mathbb{R} > 0].
+
+*** stem:[D_B \sim N(\mu_B=5;\sigma_B=0.01)]
 
 - stem:[Q_T]: producción conjunta de ambas rectificadoras: stem:[Q_T = Q_A + Q_B], [unidades].
 
@@ -129,13 +137,15 @@ image::gei_1-4_e2_4.PNG[align="center"]
 
 . stem:[\boxed{P(X=1) \approx 0.0207}]
 
+image::gei_1-4_e2_5.PNG[align="center"]
+
 +++<hr>+++
 +++<br>+++
 
 +++<p class='pregunta'>3.b Si se toma una muestra de 10 artículos de la mezcla de los fabricados por ambas máquinas, ¿cuál es la probabilidad de encontrar por lo menos una pieza buena?<p>+++
 
-. Considerando la modelización indicada en la pregunta 3.a, la probabilidad solicitada viene dada por stem:[P(X \leq 1)].
+. Considerando la modelización indicada en la pregunta 3.a, la probabilidad solicitada viene dada por stem:[P(X \geq 1)].
 
-. stem:[P(X \leq 1) = 1 - F_X(0) = 1 - bi(x=0;n=10;p=0.4501) \approx 1 - 0.0025 \approx 0.9975]
+. stem:[P(X \geq 1) = 1 - F_X(0) = 1 - bi(x=0;n=10;p=0.4501) \approx 1 - 0.0025 \approx 0.9975]
 
-. stem:[\boxed{P(X \leq 1) \approx 0.9975}]
+. stem:[\boxed{P(X \geq 1) \approx 0.9975}]
