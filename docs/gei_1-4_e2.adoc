@@ -6,7 +6,7 @@
 :showtitle: true
 :stem: latexmath
 
-_Fuente_: UTN - FRH - Guía de Ejercitación Integradora Unidades 1, 2, 3 y 4 - 2023 - Ejercicio 2
+_Fuente_: https://frh.cvg.utn.edu.ar/pluginfile.php/169481/mod_folder/content/0/Gu%C3%ADa%20Ejercicios%20Integradores%20Unidades%201%2C%202%2C%203%20y%204.pdf?forcedownload=1[UTN - FRH - Guía de Ejercitación Integradora Unidades 1, 2, 3 y 4 - 2023 - Ejercicio 2, window="_blank"]
 
 
 == Enunciado
@@ -97,6 +97,8 @@ image::gei_1-4_e2_2.PNG[align="center"]
 
 image::gei_1-4_e2_3.PNG[align="center"]
 
+image::gei_1-4_e2_4.PNG[align="center"]
+
 +++<hr>+++
 +++<br>+++
 
@@ -113,13 +115,13 @@ image::gei_1-4_e2_3.PNG[align="center"]
 
 +++<p class='pregunta'>3.a Si se toma una muestra de 10 artículos de la mezcla de los fabricados por ambas máquinas, ¿cuál es la probabilidad de encontrar una pieza buena?<p>+++
 
-. Si la producción conjunta de ambas rectificadoras es mucho mayor que la muestra de 10 piezas, esto es, stem:[Q_T >> 10], entonces dicha extracción puede ser modelizada mediante un _proceso de Bernoulli_, de forma tal que:
+. La extracción de la muestra puede ser modelizada mediante un _proceso de Bernoulli_, de forma tal que:
 
 .. Cantidad de _ensayos Bernoulli_: stem:[n = 10].
 
 .. _Probabilidad de éxito_ (la pieza cumple con la especificación): stem:[p=1-P(\overline{C})=0.4501]
 
-.. stem:[X]: v.a.c que representa la cantidad de piezas buenas obtenidas en la muestra de tamaño stem:[\rightarrow X \sim Bi(n=10;p=0.4501)]
+.. stem:[X]: v.a.c que representa la cantidad de piezas buenas obtenidas en la muestra stem:[\rightarrow X \sim Bi(n=10;p=0.4501)]
 
 . Con la modelización anterior, la probabilidad de encontrar una pieza buena en la muestra seleccionada queda definida por stem:[P(X=1)].
 
@@ -132,7 +134,7 @@ image::gei_1-4_e2_3.PNG[align="center"]
 
 +++<p class='pregunta'>3.b Si se toma una muestra de 10 artículos de la mezcla de los fabricados por ambas máquinas, ¿cuál es la probabilidad de encontrar por lo menos una pieza buena?<p>+++
 
-. Cnsiderando la modelización indicada en la pregunta 3.a, la probabilidad solicitada viene dada por stem:[P(X \leq 1)].
+. Considerando la modelización indicada en la pregunta 3.a, la probabilidad solicitada viene dada por stem:[P(X \leq 1)].
 
 . stem:[P(X \leq 1) = 1 - F_X(0) = 1 - bi(x=0;n=10;p=0.4501) \approx 1 - 0.0025 \approx 0.9975]
 
