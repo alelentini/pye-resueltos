@@ -41,7 +41,7 @@ Proceso de producción:
 
 *** stem:[R_{D_A} = \\left\\lbrace d_A: d_A \\in \\mathbb{R} \\right\\rbrace] que constituye un recorrido _matemáticamente idealizado_ ya que en la realidad estaría sujeto a un intervalo cerrado de stem:[\\mathbb{R} > 0].
 
-*** stem:[D_A \\sim N(\\mu_A=5;\\sigma_A=0.01)]
+*** stem:[D_A \\sim N(μ_A=5;𝜎_A=0.01)]
 
 - Rectificadora B:
 
@@ -51,7 +51,7 @@ Proceso de producción:
 
 *** stem:[R_{D_B} = \\left\\lbrace d_B: d_B \\in \\mathbb{R} \\right\\rbrace] que constituye un recorrido _matemáticamente idealizado_ ya que en la realidad estaría sujeto a un intervalo cerrado de stem:[\\mathbb{R} > 0].
 
-*** stem:[D_B \\sim N(\\mu_B=5;\\sigma_B=0.01)]
+*** stem:[D_B \\sim N(μ_B=5;𝜎_B=0.02)]
 
 - stem:[Q_T]: producción conjunta de ambas rectificadoras: stem:[Q_T = Q_A + Q_B], [unidades].
 
@@ -150,6 +150,102 @@ image::gei_1-4_e2_5.PNG[align="center"]
 . stem:[P(X \\geq 1) = 1 - F_X(0) = 1 - bi(x=0;n=10;p=0.4501) \\approx 1 - 0.0025 \\approx 0.9975]
 
 . stem:[\\boxed{P(X \\geq 1) \\approx 0.9975}]`},
+	{"name": "gei_1-4_e3", "contents": `= Ejercicio 3
+:author: Alejandro Lentini 
+:email: alentini@frh.utn.edu.ar
+:revdate: 2023-06-27
+:imagesdir: ./images
+:showtitle: true
+:stem: latexmath
+
+_Fuente_: https://frh.cvg.utn.edu.ar/pluginfile.php/169481/mod_folder/content/0/Gu%C3%ADa%20Ejercicios%20Integradores%20Unidades%201%2C%202%2C%203%20y%204.pdf?forcedownload=1[UTN - FRH - Guía de Ejercitación Integradora Unidades 1, 2, 3 y 4 - 2023 - Ejercicio 2, window="_blank"]
+
+
+== Enunciado
+
+La duración de una llamada telefónica es una variable aleatoria con distribución exponencial de media 8 minutos. Si se factura un pulso cada dos minutos o fracción, hallar la función de probabilidad de la cantidad de pulsos facturados por llamada.
+
+
+== Planteo
+
+- stem:[T]: v.a.c que representa la duración de una llamada telefónica [min]:
+
+** stem:[R_T = \\{ t : t \\in \\mathbb{R} > 0 \\}]
+
+** stem:[T \\sim Ex(\\lambda = \\frac{1}{8} = 0.125)]
+
+** stem:[fdp: f_T(t) = ex(t;\\lambda) = \\begin{cases}
+\\lambda e^{-\\lambda t} & \\mbox{si $t>0; \\  \\lambda > 0$}\\\\
+0 & \\mbox{para otro caso}
+\\end{cases}]
+
+** stem:[fda: F_T(T=t) = P(T ≤ t) = \\begin{cases}
+  1 - e^{-λt}, & \\mbox{$t ≥ 0$}\\\\
+  0, & \\mbox{$t < 0$}\\\\
+\\end{cases}]
+
+- X: v.a.d que representa la cantidad de pulsos facturados por llamada [unidades]:
+
+** stem:[R_X = \\{ 1, 2, 3, ... \\} = \\mathbb{N}]
+
+** stem:[X \\sim \\, ? \\, \\rightarrow \\, p_X(x) = \\, ?]
+
+image::gei_1-4_e3_1.PNG[align="center"]
+
+
+== Resolución
+
++++<p class='pregunta'>Hallar la función de probabilidad de la cantidad de pulsos facturados por llamada.<p>+++
+
+. Según las definiciones del planteo, la _función de probabilidad de la cantidad de pulsos facturados por llamada_ no es otra cosa que la _función masa de probabilidad o función de probabilidad puntual (fmp) de_ stem:[X], que estará expresada en términos de las probabilidades de stem:[T], esto es, stem:[p_X(x) = f[F_T(t)\\]].
+
+.. stem:[p_X(1) = P(X = 1) = P(0 \\leq T \\leq 2) = F_T(2) - F_T(0) = 1 - e^{-2λ} - 1 + e^0 = 1 - e^{-2λ}]
+
+.. stem:[p_X(2) = P(X = 2) = P(2 \\leq T \\leq 4) = F_T(4) - F_T(2) = 1 - e^{-4λ} - 1 + e^{-2λ} = e^{-2λ} - e^{-4λ}]
+
+.. stem:[p_X(3) = P(X = 3) = P(4 \\leq T \\leq 6) = F_T(6) - F_T(4) = 1 - e^{-6λ} - 1 + e^{-4λ} = e^{-4λ} - e^{-6λ}]
+
+.. stem:[p_X(4) = P(X = 4) = P(6 \\leq T \\leq 8) = F_T(8) - F_T(6) = 1 - e^{-8λ} - 1 + e^{-6λ} = e^{-6λ} - e^{-8λ}]
+
+. En función de lo anterior, y generalizando para stem:[T] se llega a:
+
+.. stem:[P(t-2 \\leq T \\leq t) = F_T(t) - F_T(t-2) = e^{-λ(t-2)} - e^{-λt}]
+
+. Para hallar stem:[p_X(x) = f[F_T(t)\\]] empleando la expresión anterior, es necesario expresar los valores de stem:[t] como una función de los valores de stem:[x], esto es, stem:[t = g(x)]:
+
+[frame=none, width=40%, role=center]
+|===
+|stem:[x] |stem:[t-2] |stem:[t]
+
+|stem:[1]
+|stem:[0]
+|stem:[2]
+
+|stem:[2]
+|stem:[2]
+|stem:[4]
+
+|stem:[3]
+|stem:[4]
+|stem:[6]
+
+|stem:[4]
+|stem:[6]
+|stem:[8]
+
+|...
+|...
+|...
+
+|stem:[x]
+|stem:[2(x-1)]
+|stem:[2x]
+|===
+
+[start=4]
+. De esta forma, stem:[p_X(x)] viene dada por:
+
+.. stem:[\\boxed{p_X(x) = P(X = x) = P[2(x-1) \\leq T \\leq 2x\\] = F_T(2x) - F_T[2(x-1)\\] = e^{-2(x-1)λ} - e^{-2xλ} = e^{-2(x-1)λ}(1 - e^{-2λ})}]`},
 	{"name": "indice", "contents": `= Índice
 :author: Alejandro Lentini 
 :email: alentini@frh.utn.edu.ar
@@ -158,24 +254,97 @@ image::gei_1-4_e2_5.PNG[align="center"]
 :showtitle: true
 :stem: latexmath
 
-== Introducción
+== Documentos Relacionados
+
+. https://alelentini.github.io/pye-resueltos/index.html?aDoc=introduccion[Introducción, window="_blank"]
+
+. https://alelentini.github.io/pye-resueltos/index.html?aDoc=planteo-resolucion[Planteo y Resolución de Problemas, window="_blank"]
 
 
-
-== Guías de Ejercitación
-
+== Problemas y Ejercicios
 
 
-=== Ejercitación Integradora Unidades 1, 2, 3 y 4 - 2023
-
+++++
+<div id='tabla-ejercicios-div' class='table-responsive'>
+    <table class='table table-hover table-sm align-middle table-borderless'>
+        <thead id='tabla-ejercicios-header' class='align-middle'>
+            <tr>
+                <th rowspan='2' class='text-center'>Fuente</th>
+                <th rowspan='2' class='text-center'>Unidades</th>
+                <th rowspan='2' class='text-center'>Temas</th>
+                <th colspan='2' class='text-center'>Ejercicio</th>
+            </tr>
+            <tr>
+                <th class='text-center'>#</th>
+                <th class='text-center'>Título</th>
+            </tr>
+        </thead>
+        <tbody id='tabla-ejercicios-body'></tbody>
+    </table>
+</div>
+++++
 `},
-	{"name": "introduccion", "contents": `= Introducción
+	{"name": "introduccion", "contents": `= Resueltos Probabilidad y Estadística
 :author: Alejandro Lentini 
 :email: alentini@frh.utn.edu.ar
-:revdate: 2023-06-24
+:revdate: 2023-06-28
 :imagesdir: ./images
 :showtitle: true
 :stem: latexmath
 
-XXX`},
+== Introducción
+
+El presente trabajo contiene la resolución de una selección de ejercicios de la asignatura _Probabilidad y Estadística_ tomados de:
+
+- Guías de ejercitación y trabajos prácticos.
+
+- Exámenes parciales y finales.
+
+- Libros de texto de la asignatura.
+
+- Otras fuentes.
+
+[IMPORTANT]
+====
+Se recomienda al alumno que complemente el presente texto con otros trabajos similares, como por ejemplo los ejercicios resueltos de los libros de texto tradicionales de la asignatura, así como libros enfocados específicamente en el _planteo y la resolución de problemas y ejercicios_:
+
+- Probabilidad. LIPSCHUTZ, S. Serie Schaum.
+- Estadística. SPIEGEL, M., STEPHENS L. Serie Schaum.
+- Teoría y Problemas de Probabilidad y Estadística. SPIEGEL, M. Serie Schaum.
+====
+
+
+== Nota Aclaratoria
+
+WARNING: Este material no debe tomarse como una prescripción de la única forma de resolver los problemas y ejercicios, dado que muchos de ellos pueden abordarse y resolverse por otros caminos, obviamente arribando al mismo resultado.
+
+IMPORTANT: Para un uso eficaz de este trabajo, así como para maximizar los resultados del proceso de aprendizaje, se recomienda al alumno que proceda de la siguiente forma:
+
+. *Comprender la actividad de plantear y resolver problemas* conociendo los diferentes pasos necesarios, así como las principales heurísticas de resolución, tanto las generales como las específicas a la probabilidad y estadística.
+
+. *Comprender la teoría subyacente a cada problema*. No es posible aplicar aquello que se desconoce, o que no se comprende del todo.
+
+. *Intentar resolver el problema por uno mismo*. Identificar cuáles son las dificultades para llegar a la resolución esperada:
+
+.. ¿No se comprende el enunciado y/o las consignas?
+
+.. ¿No es posible plantear el problema en términos matemáticos? ¿No se tiene una estrategia de solución?
+
+.. ¿El resultado obtenido no es el correcto? ¿Se verificó que los pasos sean correctos?
+
+. *Consultar la resolución*, no con una lectura pasiva para memorizar, sino _con una actitud activa y crítica preguntando continuamente los porqués de cada paso_:
+
+.. ¿Cómo se planteó el problema? ¿Por qué está planteado de esa forma y no de otra?
+
+.. ¿El lenguaje matemático empleado para modelizar el problema es correcto y preciso?
+
+.. ¿Se emplearon todos los datos? ¿La derivación de datos o resultados indirectos es correcta?
+
+.. ¿Cuál es la teoría subyacente que se está aplicando: principios, teoremas, etc.?
+
+.. ¿Cuál es la estrategia de solución empleada?
+
+.. ¿La resolución es correcta en cada uno de sus pasos?
+
+.. ¿Es posible llegar al mismo resultado empleando otro camino?`},
 ];

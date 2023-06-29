@@ -1,9 +1,63 @@
-= Introducción
+= Resueltos Probabilidad y Estadística
 :author: Alejandro Lentini 
 :email: alentini@frh.utn.edu.ar
-:revdate: 2023-06-24
+:revdate: 2023-06-28
 :imagesdir: ./images
 :showtitle: true
 :stem: latexmath
 
-XXX
+== Introducción
+
+El presente trabajo contiene la resolución de una selección de ejercicios de la asignatura _Probabilidad y Estadística_ tomados de:
+
+- Guías de ejercitación y trabajos prácticos.
+
+- Exámenes parciales y finales.
+
+- Libros de texto de la asignatura.
+
+- Otras fuentes.
+
+[IMPORTANT]
+====
+Se recomienda al alumno que complemente el presente texto con otros trabajos similares, como por ejemplo los ejercicios resueltos de los libros de texto tradicionales de la asignatura, así como libros enfocados específicamente en el _planteo y la resolución de problemas y ejercicios_:
+
+- Probabilidad. LIPSCHUTZ, S. Serie Schaum.
+- Estadística. SPIEGEL, M., STEPHENS L. Serie Schaum.
+- Teoría y Problemas de Probabilidad y Estadística. SPIEGEL, M. Serie Schaum.
+====
+
+
+== Nota Aclaratoria
+
+WARNING: Este material no debe tomarse como una prescripción de la única forma de resolver los problemas y ejercicios, dado que muchos de ellos pueden abordarse y resolverse por otros caminos, obviamente arribando al mismo resultado.
+
+IMPORTANT: Para un uso eficaz de este trabajo, así como para maximizar los resultados del proceso de aprendizaje, se recomienda al alumno que proceda de la siguiente forma:
+
+. *Comprender la actividad de plantear y resolver problemas* conociendo los diferentes pasos necesarios, así como las principales heurísticas de resolución, tanto las generales como las específicas a la probabilidad y estadística.
+
+. *Comprender la teoría subyacente a cada problema*. No es posible aplicar aquello que se desconoce, o que no se comprende del todo.
+
+. *Intentar resolver el problema por uno mismo*. Identificar cuáles son las dificultades para llegar a la resolución esperada:
+
+.. ¿No se comprende el enunciado y/o las consignas?
+
+.. ¿No es posible plantear el problema en términos matemáticos? ¿No se tiene una estrategia de solución?
+
+.. ¿El resultado obtenido no es el correcto? ¿Se verificó que los pasos sean correctos?
+
+. *Consultar la resolución*, no con una lectura pasiva para memorizar, sino _con una actitud activa y crítica preguntando continuamente los porqués de cada paso_:
+
+.. ¿Cómo se planteó el problema? ¿Por qué está planteado de esa forma y no de otra?
+
+.. ¿El lenguaje matemático empleado para modelizar el problema es correcto y preciso?
+
+.. ¿Se emplearon todos los datos? ¿La derivación de datos o resultados indirectos es correcta?
+
+.. ¿Cuál es la teoría subyacente que se está aplicando: principios, teoremas, etc.?
+
+.. ¿Cuál es la estrategia de solución empleada?
+
+.. ¿La resolución es correcta en cada uno de sus pasos?
+
+.. ¿Es posible llegar al mismo resultado empleando otro camino?

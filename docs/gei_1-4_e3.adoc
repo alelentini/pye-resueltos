@@ -1,0 +1,96 @@
+= Ejercicio 3
+:author: Alejandro Lentini 
+:email: alentini@frh.utn.edu.ar
+:revdate: 2023-06-27
+:imagesdir: ./images
+:showtitle: true
+:stem: latexmath
+
+_Fuente_: https://frh.cvg.utn.edu.ar/pluginfile.php/169481/mod_folder/content/0/Gu%C3%ADa%20Ejercicios%20Integradores%20Unidades%201%2C%202%2C%203%20y%204.pdf?forcedownload=1[UTN - FRH - Guía de Ejercitación Integradora Unidades 1, 2, 3 y 4 - 2023 - Ejercicio 2, window="_blank"]
+
+
+== Enunciado
+
+La duración de una llamada telefónica es una variable aleatoria con distribución exponencial de media 8 minutos. Si se factura un pulso cada dos minutos o fracción, hallar la función de probabilidad de la cantidad de pulsos facturados por llamada.
+
+
+== Planteo
+
+- stem:[T]: v.a.c que representa la duración de una llamada telefónica [min]:
+
+** stem:[R_T = \{ t : t \in \mathbb{R} > 0 \}]
+
+** stem:[T \sim Ex(\lambda = \frac{1}{8} = 0.125)]
+
+** stem:[fdp: f_T(t) = ex(t;\lambda) = \begin{cases}
+\lambda e^{-\lambda t} & \mbox{si $t>0; \  \lambda > 0$}\\
+0 & \mbox{para otro caso}
+\end{cases}]
+
+** stem:[fda: F_T(T=t) = P(T ≤ t) = \begin{cases}
+  1 - e^{-λt}, & \mbox{$t ≥ 0$}\\
+  0, & \mbox{$t < 0$}\\
+\end{cases}]
+
+- X: v.a.d que representa la cantidad de pulsos facturados por llamada [unidades]:
+
+** stem:[R_X = \{ 1, 2, 3, ... \} = \mathbb{N}]
+
+** stem:[X \sim \, ? \, \rightarrow \, p_X(x) = \, ?]
+
+image::gei_1-4_e3_1.PNG[align="center"]
+
+
+== Resolución
+
++++<p class='pregunta'>Hallar la función de probabilidad de la cantidad de pulsos facturados por llamada.<p>+++
+
+. Según las definiciones del planteo, la _función de probabilidad de la cantidad de pulsos facturados por llamada_ no es otra cosa que la _función masa de probabilidad o función de probabilidad puntual (fmp) de_ stem:[X], que estará expresada en términos de las probabilidades de stem:[T], esto es, stem:[p_X(x) = f[F_T(t)\]].
+
+.. stem:[p_X(1) = P(X = 1) = P(0 \leq T \leq 2) = F_T(2) - F_T(0) = 1 - e^{-2λ} - 1 + e^0 = 1 - e^{-2λ}]
+
+.. stem:[p_X(2) = P(X = 2) = P(2 \leq T \leq 4) = F_T(4) - F_T(2) = 1 - e^{-4λ} - 1 + e^{-2λ} = e^{-2λ} - e^{-4λ}]
+
+.. stem:[p_X(3) = P(X = 3) = P(4 \leq T \leq 6) = F_T(6) - F_T(4) = 1 - e^{-6λ} - 1 + e^{-4λ} = e^{-4λ} - e^{-6λ}]
+
+.. stem:[p_X(4) = P(X = 4) = P(6 \leq T \leq 8) = F_T(8) - F_T(6) = 1 - e^{-8λ} - 1 + e^{-6λ} = e^{-6λ} - e^{-8λ}]
+
+. En función de lo anterior, y generalizando para stem:[T] se llega a:
+
+.. stem:[P(t-2 \leq T \leq t) = F_T(t) - F_T(t-2) = e^{-λ(t-2)} - e^{-λt}]
+
+. Para hallar stem:[p_X(x) = f[F_T(t)\]] empleando la expresión anterior, es necesario expresar los valores de stem:[t] como una función de los valores de stem:[x], esto es, stem:[t = g(x)]:
+
+[frame=none, width=40%, role=center]
+|===
+|stem:[x] |stem:[t-2] |stem:[t]
+
+|stem:[1]
+|stem:[0]
+|stem:[2]
+
+|stem:[2]
+|stem:[2]
+|stem:[4]
+
+|stem:[3]
+|stem:[4]
+|stem:[6]
+
+|stem:[4]
+|stem:[6]
+|stem:[8]
+
+|...
+|...
+|...
+
+|stem:[x]
+|stem:[2(x-1)]
+|stem:[2x]
+|===
+
+[start=4]
+. De esta forma, stem:[p_X(x)] viene dada por:
+
+.. stem:[\boxed{p_X(x) = P(X = x) = P[2(x-1) \leq T \leq 2x\] = F_T(2x) - F_T[2(x-1)\] = e^{-2(x-1)λ} - e^{-2xλ} = e^{-2(x-1)λ}(1 - e^{-2λ})}]

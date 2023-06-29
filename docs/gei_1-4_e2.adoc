@@ -40,7 +40,7 @@ Proceso de producción:
 
 *** stem:[R_{D_A} = \left\lbrace d_A: d_A \in \mathbb{R} \right\rbrace] que constituye un recorrido _matemáticamente idealizado_ ya que en la realidad estaría sujeto a un intervalo cerrado de stem:[\mathbb{R} > 0].
 
-*** stem:[D_A \sim N(\mu_A=5;\sigma_A=0.01)]
+*** stem:[D_A \sim N(μ_A=5;𝜎_A=0.01)]
 
 - Rectificadora B:
 
@@ -50,7 +50,7 @@ Proceso de producción:
 
 *** stem:[R_{D_B} = \left\lbrace d_B: d_B \in \mathbb{R} \right\rbrace] que constituye un recorrido _matemáticamente idealizado_ ya que en la realidad estaría sujeto a un intervalo cerrado de stem:[\mathbb{R} > 0].
 
-*** stem:[D_B \sim N(\mu_B=5;\sigma_B=0.01)]
+*** stem:[D_B \sim N(μ_B=5;𝜎_B=0.02)]
 
 - stem:[Q_T]: producción conjunta de ambas rectificadoras: stem:[Q_T = Q_A + Q_B], [unidades].
 

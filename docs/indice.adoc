@@ -6,13 +6,32 @@
 :showtitle: true
 :stem: latexmath
 
-== Introducción
+== Documentos Relacionados
+
+. https://alelentini.github.io/pye-resueltos/index.html?aDoc=introduccion[Introducción, window="_blank"]
+
+. https://alelentini.github.io/pye-resueltos/index.html?aDoc=planteo-resolucion[Planteo y Resolución de Problemas, window="_blank"]
 
 
-
-== Guías de Ejercitación
-
+== Problemas y Ejercicios
 
 
-=== Ejercitación Integradora Unidades 1, 2, 3 y 4 - 2023
-
+++++
+<div id='tabla-ejercicios-div' class='table-responsive'>
+    <table class='table table-hover table-sm align-middle table-borderless'>
+        <thead id='tabla-ejercicios-header' class='align-middle'>
+            <tr>
+                <th rowspan='2' class='text-center'>Fuente</th>
+                <th rowspan='2' class='text-center'>Unidades</th>
+                <th rowspan='2' class='text-center'>Temas</th>
+                <th colspan='2' class='text-center'>Ejercicio</th>
+            </tr>
+            <tr>
+                <th class='text-center'>#</th>
+                <th class='text-center'>Título</th>
+            </tr>
+        </thead>
+        <tbody id='tabla-ejercicios-body'></tbody>
+    </table>
+</div>
+++++
