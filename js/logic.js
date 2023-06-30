@@ -48,14 +48,29 @@ function updateDocContents(aDoc) {
 
     // Updates UI for 'Índice' section
     if (aDoc.name === 'indice') {
-        //html = ``;
-        //document.getElementById('tabla-ejercicios-div').innerHTML = html;
+        html = '';
+        index.forEach(doc => {
+            html += `<tr>
+                        <td>${doc.source}</td>
+                        <td><a href="#" onclick="goToDocSec('${doc.id}', '')" title="Ir a ejercicio">${doc.number} - ${doc.title}</a></td>
+                        <td>${doc.units.join(', ')}</td>
+                        <td>${doc.topics.join(', ')}</td>
+                     </tr>`;
+        });
+        document.getElementById('tabla-ejercicios-body').innerHTML = html;
     }
     
     // Updates Latex rendering
     MathJax.typeset();
 }
 
+
+// Load AsciiDoc document and scroll to section
+function goToDocSec(aDocName, aDocSection) {
+
+    updateDocContents(aDocs.find(aDoc => aDoc.name === aDocName));
+    // TODO > scroll to section
+}
 
 
 /**************************************************************************************************************************************************

@@ -5,12 +5,15 @@
 :imagesdir: ./images
 :showtitle: true
 :stem: latexmath
+:toc:
+:toc-title: Contenidos
+
 
 == Documentos Relacionados
 
-. https://alelentini.github.io/pye-resueltos/index.html?aDoc=introduccion[Introducción, window="_blank"]
+. +++<a href='#' onclick='goToDocSec("introduccion", "")' title='Ir a documento'>Introducción</a>+++
 
-. https://alelentini.github.io/pye-resueltos/index.html?aDoc=planteo-resolucion[Planteo y Resolución de Problemas, window="_blank"]
+. +++<a href='#' onclick='goToDocSec("planteo-resolucion", "")' title='Ir a documento'>Planteo y Resolución de Ejercicios</a>+++
 
 
 == Problemas y Ejercicios
@@ -21,14 +24,10 @@
     <table class='table table-hover table-sm align-middle table-borderless'>
         <thead id='tabla-ejercicios-header' class='align-middle'>
             <tr>
-                <th rowspan='2' class='text-center'>Fuente</th>
-                <th rowspan='2' class='text-center'>Unidades</th>
-                <th rowspan='2' class='text-center'>Temas</th>
-                <th colspan='2' class='text-center'>Ejercicio</th>
-            </tr>
-            <tr>
-                <th class='text-center'>#</th>
-                <th class='text-center'>Título</th>
+                <th class='text-center'>Fuente</th>
+                <th class='text-center'>Ejercicio</th>
+                <th class='text-center'>Unidades</th>
+                <th class='text-center'>Temas</th>
             </tr>
         </thead>
         <tbody id='tabla-ejercicios-body'></tbody>

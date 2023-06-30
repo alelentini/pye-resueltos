@@ -5,8 +5,10 @@
 :imagesdir: ./images
 :showtitle: true
 :stem: latexmath
+:toc:
+:toc-title: Contenidos
 
-_Fuente_: https://frh.cvg.utn.edu.ar/pluginfile.php/169481/mod_folder/content/0/Gu%C3%ADa%20Ejercicios%20Integradores%20Unidades%201%2C%202%2C%203%20y%204.pdf?forcedownload=1[UTN - FRH - Guía de Ejercitación Integradora Unidades 1, 2, 3 y 4 - 2023 - Ejercicio 2, window="_blank"]
++++<div id='info-ejercicio'></div>+++
 
 
 == Enunciado

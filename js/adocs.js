@@ -6,8 +6,10 @@ aDocs = [
 :imagesdir: ./images
 :showtitle: true
 :stem: latexmath
+:toc:
+:toc-title: Contenidos
 
-_Fuente_: https://frh.cvg.utn.edu.ar/pluginfile.php/169481/mod_folder/content/0/Gu%C3%ADa%20Ejercicios%20Integradores%20Unidades%201%2C%202%2C%203%20y%204.pdf?forcedownload=1[UTN - FRH - Guía de Ejercitación Integradora Unidades 1, 2, 3 y 4 - 2023 - Ejercicio 2, window="_blank"]
++++<div id='info-ejercicio'></div>+++
 
 
 == Enunciado
@@ -157,8 +159,10 @@ image::gei_1-4_e2_5.PNG[align="center"]
 :imagesdir: ./images
 :showtitle: true
 :stem: latexmath
+:toc:
+:toc-title: Contenidos
 
-_Fuente_: https://frh.cvg.utn.edu.ar/pluginfile.php/169481/mod_folder/content/0/Gu%C3%ADa%20Ejercicios%20Integradores%20Unidades%201%2C%202%2C%203%20y%204.pdf?forcedownload=1[UTN - FRH - Guía de Ejercitación Integradora Unidades 1, 2, 3 y 4 - 2023 - Ejercicio 2, window="_blank"]
++++<div id='info-ejercicio'></div>+++
 
 
 == Enunciado
@@ -253,12 +257,15 @@ image::gei_1-4_e3_1.PNG[align="center"]
 :imagesdir: ./images
 :showtitle: true
 :stem: latexmath
+:toc:
+:toc-title: Contenidos
+
 
 == Documentos Relacionados
 
-. https://alelentini.github.io/pye-resueltos/index.html?aDoc=introduccion[Introducción, window="_blank"]
+. +++<a href='#' onclick='goToDocSec("introduccion", "")' title='Ir a documento'>Introducción</a>+++
 
-. https://alelentini.github.io/pye-resueltos/index.html?aDoc=planteo-resolucion[Planteo y Resolución de Problemas, window="_blank"]
+. +++<a href='#' onclick='goToDocSec("planteo-resolucion", "")' title='Ir a documento'>Planteo y Resolución de Ejercicios</a>+++
 
 
 == Problemas y Ejercicios
@@ -269,14 +276,10 @@ image::gei_1-4_e3_1.PNG[align="center"]
     <table class='table table-hover table-sm align-middle table-borderless'>
         <thead id='tabla-ejercicios-header' class='align-middle'>
             <tr>
-                <th rowspan='2' class='text-center'>Fuente</th>
-                <th rowspan='2' class='text-center'>Unidades</th>
-                <th rowspan='2' class='text-center'>Temas</th>
-                <th colspan='2' class='text-center'>Ejercicio</th>
-            </tr>
-            <tr>
-                <th class='text-center'>#</th>
-                <th class='text-center'>Título</th>
+                <th class='text-center'>Fuente</th>
+                <th class='text-center'>Ejercicio</th>
+                <th class='text-center'>Unidades</th>
+                <th class='text-center'>Temas</th>
             </tr>
         </thead>
         <tbody id='tabla-ejercicios-body'></tbody>
@@ -291,6 +294,9 @@ image::gei_1-4_e3_1.PNG[align="center"]
 :imagesdir: ./images
 :showtitle: true
 :stem: latexmath
+:toc:
+:toc-title: Contenidos
+
 
 == Introducción
 
@@ -303,6 +309,8 @@ El presente trabajo contiene la resolución de una selección de ejercicios de l
 - Libros de texto de la asignatura.
 
 - Otras fuentes.
+
++++<br>+++
 
 [IMPORTANT]
 ====
@@ -318,7 +326,29 @@ Se recomienda al alumno que complemente el presente texto con otros trabajos sim
 
 WARNING: Este material no debe tomarse como una prescripción de la única forma de resolver los problemas y ejercicios, dado que muchos de ellos pueden abordarse y resolverse por otros caminos, obviamente arribando al mismo resultado.
 
-IMPORTANT: Para un uso eficaz de este trabajo, así como para maximizar los resultados del proceso de aprendizaje, se recomienda al alumno que proceda de la siguiente forma:
++++<br>+++
+
+IMPORTANT: Para un uso eficaz de este trabajo, así como para maximizar los resultados del proceso de aprendizaje, se recomienda al alumno que emplee este material teniendo en cuenta las recomendaciones indicadas en la sección *Consejos para el uso de los resueltos*.
+
+
+== Instrucciones de Uso
+
+Se recomienda tener en cuenta las siguientes instrucciones para una navegación eficaz de los contenidos de este documento:
+
+. Emplear el *Índice* para explorar el listado de los contenidos disponibles.
+
+. Explorar el listado de los contenidos disponibles, los cuales se encuentran agrupados en dos categorías, a saber:
+
+.. *Documentos relacionados*: introducción a los _resueltos de probabilidad y estadística_ (este documento), notas y consejos sobre el _planteo y resolución de problemas_, etc.
+
+.. *Problemas y Ejercicios*: listado de los problemas y ejercicios resueltos, indicando fuente, número y título de problema/ejercicio, y las unidades temáticas y temas abordados.
+
+. Seleccionar el problema/ejercicio de interés, y _hacer click_ sobre su número y título para visualizar su resolución.
+
+. Desde cualquier documento, al _hacer click_ sobre el título *Resueltos Probabilidad y Estadística* (ubicado en la parte superior izquierda de la pantalla) se cargará el *Índice*.
+
+
+== Consejos para el Proceso de Aprendizaje
 
 . *Comprender la actividad de plantear y resolver problemas* conociendo los diferentes pasos necesarios, así como las principales heurísticas de resolución, tanto las generales como las específicas a la probabilidad y estadística.
 
