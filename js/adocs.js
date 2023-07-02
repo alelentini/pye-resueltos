@@ -250,6 +250,148 @@ image::gei_1-4_e3_1.PNG[align="center"]
 . De esta forma, stem:[p_X(x)] viene dada por:
 
 .. stem:[\\boxed{p_X(x) = P(X = x) = P[2(x-1) \\leq T \\leq 2x\\] = F_T(2x) - F_T[2(x-1)\\] = e^{-2(x-1)λ} - e^{-2xλ} = e^{-2(x-1)λ}(1 - e^{-2λ})}]`},
+	{"name": "gei_1-4_e4", "contents": `= Ejercicio 4
+:author: Alejandro Lentini 
+:email: alentini@frh.utn.edu.ar
+:revdate: 2023-06-30
+:imagesdir: ./images
+:showtitle: true
+:stem: latexmath
+:toc:
+:toc-title: Contenidos
+
++++<div id='info-ejercicio'></div>+++
+
+
+== Enunciado
+
+La víctima de un accidente morirá, a menos que reciba en los próximos 10.05 minutos una cantidad de sangre tipo https://es.wikipedia.org/wiki/Grupo_sangu%C3%ADneo["A Rh(\\+)", window="_blank"] que puede ser suministrada por un solo tipo de donante. Toma 2 minutos tipificar la sangre de un donante y 2 minutos realizar la transfusión. Hay un gran número de donantes disponibles cuya sangre no ha sido tipificada y 40% de ellos tienen sangre tipo A Rh(+).
+
+. ¿Cuál es la probabilidad que se salve la víctima del accidente (evento stem:[S]) si solo se dispone de un equipo para tipificar la sangre?
+
+. Sea stem:[T] la variable aleatoria que indica los minutos hasta que se completó la transfusión que salvó a la víctima. Definir el recorrido de stem:[T] y la distribución de probabilidad puntual. Nota: es importante usar el dato de que stem:[S] ocurrió.
+
+
+== Planteo
+
+- stem:[S]: _evento_ que ocurre cuando la víctima salva su vida, para lo que se necesita:
+
+.. Identificación de un donante compatible con el tipo de sangre A Rh(+).
+
+.. Transfusión de sangre.
+
+.. stem:[P(S) = \\, ?]
+
+- La necesidad de identificar un donante compatible de entre una población de donantes implica que las acciones anteriores corresponden a una _experiencia aleatoria_ que puede _modelarse_ como sigue:
+
+.. Seleccionar un donante al azar de entre los donantes disponibles.
+
+.. Tipificar la sangre del donante (duración 2 minutos).
+
+.. Si el tipo de sangre del donante es A Rh(+), realizar la transfusión a la víctima del accidente (duración 2 minutos).
+
+... stem:[A_i]: _evento_ que se produce cuando, en la i-ésima selección y tipificación, el donante tiene sangre tipo A Rh(+).
+
+... stem:[P(A_i) = 0.4 \\, \\forall \\, i \\in \\mathbb{N} ]
+
+.. Si el tipo de sangre del donante no es A Rh(+), repetir pasos de _selección al azar y tipificación de un donante_.
+
+... stem:[\\overline{A_i}]: _evento_ que se produce cuando, en la i-ésima selección y tipificación, el donante no tiene sangre tipo A Rh(+).
+
+... stem:[P(\\overline{A_i}) = 0.6 \\, \\forall \\, i \\in \\mathbb{N}]
+
+- De esta forma, el _espacio muestral_ de la _experiencia aleatoria_ puede expresarse en función de los _eventos_ stem:[A_i] y stem:[\\overline{A_i}] según:
+
+.. stem:[E = \\{ A_1, \\, \\overline{A_1} \\cap A_2, \\, \\overline{A_1} \\cap \\overline{A_2} \\cap A_3, \\, \\overline{A_1} \\cap \\overline{A_2} \\cap \\overline{A_3} \\cap ... \\cap \\overline{A_{i-1}} \\cap A_i, \\, ...\\}]
+
+- Los _eventos_ stem:[A_i] y stem:[\\overline{A_i}] son _estadísticamente independientes_ entre sí, esto es:
+
+.. stem:[P(\\overline{A_1} \\cap \\overline{A_2} \\cap \\overline{A_3} \\cap ... \\cap \\overline{A_{i-1}} \\cap A_i) = P(\\overline{A_1})P(\\overline{A_2})P(\\overline{A_3})...P(\\overline{A_{i-1}})P(A_i)]
+
++++<br>+++
+
+image::gei_1-4_e4_1.PNG[align="center"]
+
+
+== Resolución
+
++++<p class='pregunta'>1. ¿Cuál es la probabilidad que se salve la víctima del accidente (evento stem:[S]) si solo se dispone de un equipo para tipificar la sangre?<p>+++
+
+. Del planteo, se observa que el _evento_ stem:[S] se compone de los siguientes _eventos fundamentales_ de stem:[E]:
+
+.. stem:[S = A_1 \\cup (\\overline{A_1} \\cap A_2) \\cup (\\overline{A_1} \\cap \\overline{A_2} \\cap A_3) \\cup (\\overline{A_1} \\cap \\overline{A_2} \\cap \\overline{A_3} \\cap A_4)]
+
+
+. Como los _eventos fundamentales_ de stem:[E] son _disjuntos_ entre sí, y considerando la _independencia estadística_ planteada para los _sucesos_ stem:[A_i] y stem:[\\overline{A_i}], la probabilidad pedida queda entonces determinada por:
+
+.. stem:[\\begin{equation} \\begin{split}
+P(S) &= P(A_1) + P(\\overline{A_1} \\cap A_2) + P(\\overline{A_1} \\cap \\overline{A_2} \\cap A_3) + P(\\overline{A_1} \\cap \\overline{A_2} \\cap \\overline{A_3} \\cap A_4) \\\\
+  &= P(A_1) + P(\\overline{A_1})P(A_2) + P(\\overline{A_1})P(\\overline{A_2})P(A_3) + P(\\overline{A_1})P(\\overline{A_2})P(\\overline{A_3})P(A_4) \\\\
+  &= 0.4 + 0.6*0.4 + 0.6^2*0.4 + 0.6^3*0.4 = 0.8704
+\\end{split} \\end{equation}]
+
+.. stem:[\\boxed{P(S) = 0.8704}]
+
+. Otra manera de resolver stem:[P(S)] es identificando que la _experiencia aleatoria_ planteada puede _modelarse con una distribución geométrica_:
+
+.. stem:[Y]: v.a.d que representa la cantidad de selecciones y tipificaciones (_ensayos_) requeridos hasta obtener el primer tipo A Rh(+) (_éxito_) [unidades].
+
+... stem:[R_Y = \\{ 1, 2, 3, ... \\} = \\mathbb{N}]
+
+... stem:[Y \\sim Ge(p) \\rightarrow \\, p = P(A_i) = 0.4]
+
+... stem:[fmp: p_Y(y) = P(Y=y) = g(y;p) = \\begin{cases}
+p(1-p)^{y-1} & \\mbox{si $y=1,2,3,...$}\\\\
+0 & \\mbox{para otro caso}
+\\end{cases}]
+
+... stem:[fda: F_Y(y) = P(Y \\leq y) = G(y;p) = \\sum_{z=1}^{y}{g(z;p)}]
+
+.. Considerando el _modelo geométrico_ planteado, y teniendo en cuenta que el evento stem:[S] puede ocurrir hasta la cuarta selección del donante y tipificación de sangre, la probabilidad buscada queda especificada como sigue:
+
+... stem:[P(S) = F_Y(4) = P(Y \\leq 4) = G(y;0.4) = \\sum_{z=1}^{4}{g(z;0.4)} = 0.8704]
+
+... stem:[\\boxed{P(S) = 0.8704}]
+
+image::gei_1-4_e4_2.PNG[align="center"]
+
+
++++<p class='pregunta'>2. Sea \\(T\\) la variable aleatoria que indica los minutos hasta que se completó la transfusión que salvó a la víctima. Definir el recorrido de \\(T\\) y la distribución de probabilidad puntual. Nota: es importante usar el dato de que \\(T\\) ocurrió.<p>+++
+
+. stem:[T]: v.a.d que representa la cantidad de minutos hasta qye se completó la transfusión que salvó a la víctima stem:[\\, \\rightarrow \\, S] ocurrió.
+
+.. stem:[R_T = \\{ 4, 6, 8, 10 \\}]
+
+.. stem:[fmp: f_T(t) = p_T(t) = P(T=t) = \\, ?]
+
+. Para halla la _función massa de probabilidad_ stem:[p_T(t)] es necesario determinar las probabilidades de stem:[T] en cada uno de los valores de su _recorrido_:
+
+.. stem:[p_T(4) = P(T=4) = P(A_1 \\, | \\, S ) = \\frac{P(A_1 \\cap S )}{P(S)} = \\frac{P(A_1)}{P(S)} = \\frac{0.4}{0.8704} \\approx 0.4596]
+
+.. stem:[p_T(6) = P(T=6) = P(\\overline{A_1} \\cap A_2 \\, | \\, S ) = \\frac{P(\\overline{A_1} \\cap A_2 \\cap S )}{P(S)} = \\frac{P(\\overline{A_1} \\cap A_2)}{P(S)} = \\frac{0.6*0.4}{0.8704} \\approx 0.2757]
+
+.. stem:[p_T(8) = P(T=8) = P(\\overline{A_1} \\cap \\overline{A_2} \\cap A_3 \\, | \\, S ) = \\frac{P(\\overline{A_1} \\cap \\overline{A_2} \\cap A_3 \\cap S )}{P(S)} = \\frac{P(\\overline{A_1} \\cap \\overline{A_2} \\cap A_3)}{P(S)} = \\frac{0.6^2*0.4}{0.8704} \\approx 0.1654]
+
+.. stem:[p_T(10) = P(T=10) = P(\\overline{A_1} \\cap \\overline{A_2} \\cap \\overline{A_3} \\cap A_4 \\, | \\, S ) = \\frac{P(\\overline{A_1} \\cap \\overline{A_2} \\cap \\overline{A_3} \\cap A_4 \\cap S )}{P(S)} = \\frac{P(\\overline{A_1} \\cap \\overline{A_2} \\cap \\overline{A_3} \\cap A_4)}{P(S)} = \\frac{0.6^3*0.4}{0.8704} \\approx 0.0933]
+
++++<br>+++
+
+[frame=none, width=40%, role=center]
+|===
+|stem:[t] |stem:[p_T(t) = P(T=t)]
+
+|stem:[4]
+|stem:[0.4596]
+
+|stem:[6]
+|stem:[0.2757]
+
+|stem:[8]
+|stem:[0.1654]
+
+|stem:[10]
+|stem:[0.0933]
+|===`},
 	{"name": "indice", "contents": `= Índice
 :author: Alejandro Lentini 
 :email: alentini@frh.utn.edu.ar
@@ -312,6 +454,7 @@ El presente trabajo contiene la resolución de una selección de ejercicios de l
 
 +++<br>+++
 
+****
 [IMPORTANT]
 ====
 Se recomienda al alumno que complemente el presente texto con otros trabajos similares, como por ejemplo los ejercicios resueltos de los libros de texto tradicionales de la asignatura, así como libros enfocados específicamente en el _planteo y la resolución de problemas y ejercicios_:
@@ -320,15 +463,20 @@ Se recomienda al alumno que complemente el presente texto con otros trabajos sim
 - Estadística. SPIEGEL, M., STEPHENS L. Serie Schaum.
 - Teoría y Problemas de Probabilidad y Estadística. SPIEGEL, M. Serie Schaum.
 ====
+****
 
 
 == Nota Aclaratoria
 
+****
 WARNING: Este material no debe tomarse como una prescripción de la única forma de resolver los problemas y ejercicios, dado que muchos de ellos pueden abordarse y resolverse por otros caminos, obviamente arribando al mismo resultado.
+****
 
 +++<br>+++
 
+****
 IMPORTANT: Para un uso eficaz de este trabajo, así como para maximizar los resultados del proceso de aprendizaje, se recomienda al alumno que emplee este material teniendo en cuenta las recomendaciones indicadas en la sección *Consejos para el uso de los resueltos*.
+****
 
 
 == Instrucciones de Uso

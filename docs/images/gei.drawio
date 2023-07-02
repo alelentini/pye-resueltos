@@ -1,4 +1,4 @@
-<mxfile host="Electron" modified="2023-06-28T10:48:54.755Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.2.8 Chrome/112.0.5615.165 Electron/24.2.0 Safari/537.36" etag="24XFB4dfJb7K8ULW3G6V" version="21.2.8" type="device" pages="2">
+<mxfile host="Electron" modified="2023-07-01T10:57:31.675Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.2.8 Chrome/112.0.5615.165 Electron/24.2.0 Safari/537.36" etag="_uJXMmLEHSy_YNbvMU-3" version="21.2.8" type="device" pages="3">
   <diagram name="1-4_e_2" id="D4vqjiqnPjhXrInUzTPq">
     <mxGraphModel dx="1036" dy="654" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="1" shadow="0">
       <root>
@@ -98,7 +98,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="08ga1YCJ1nIyUNZkejYX" name="1-4_e_3">
-    <mxGraphModel dx="1036" dy="654" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="1" shadow="0">
+    <mxGraphModel dx="1050" dy="669" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="1" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -344,6 +344,110 @@
             <mxPoint x="320" y="218" as="sourcePoint" />
             <mxPoint x="200" y="270" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="1-4_e_4" id="VGw0PKhryqzkZyKrSQ8M">
+    <mxGraphModel dx="1036" dy="654" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="1" shadow="0">
+      <root>
+        <mxCell id="_izzBy91xEisEbro5Cmz-0" />
+        <mxCell id="_izzBy91xEisEbro5Cmz-1" parent="_izzBy91xEisEbro5Cmz-0" />
+        <mxCell id="1-PAjj-PlqOENZiI3AEx-7" value="Población de donantes" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6C8EBF;fontColor=#6C8EBF;" parent="_izzBy91xEisEbro5Cmz-1" vertex="1">
+          <mxGeometry x="160" y="150" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="1-PAjj-PlqOENZiI3AEx-8" value="1. Selección&lt;br&gt;aleatoria" style="endArrow=classicThin;html=1;rounded=0;endFill=1;fillColor=#f5f5f5;strokeColor=#666666;" parent="_izzBy91xEisEbro5Cmz-1" edge="1">
+          <mxGeometry x="-0.4286" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="220" y="240" as="sourcePoint" />
+            <mxPoint x="280" y="320" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="220" y="320" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1-PAjj-PlqOENZiI3AEx-9" value="Donante" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#6C8EBF;" parent="_izzBy91xEisEbro5Cmz-1" vertex="1">
+          <mxGeometry x="316" y="305" width="10" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1-PAjj-PlqOENZiI3AEx-10" value="Donante" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#6C8EBF;" parent="_izzBy91xEisEbro5Cmz-1" vertex="1">
+          <mxGeometry x="796" y="304" width="10" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1-PAjj-PlqOENZiI3AEx-11" value="Víctima" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#e1d5e7;strokeColor=#9673A6;fontColor=#9673A6;" parent="_izzBy91xEisEbro5Cmz-1" vertex="1">
+          <mxGeometry x="796" y="175" width="10" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1-PAjj-PlqOENZiI3AEx-12" value="3. Transfusión" style="endArrow=classicThin;html=1;rounded=0;endFill=1;fillColor=#f5f5f5;strokeColor=#666666;" parent="_izzBy91xEisEbro5Cmz-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="600" y="320" as="sourcePoint" />
+            <mxPoint x="760" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1-PAjj-PlqOENZiI3AEx-13" value="2. Tipificación &lt;br&gt;de sangre" style="endArrow=classicThin;html=1;rounded=0;endFill=1;fillColor=#f5f5f5;strokeColor=#666666;" parent="_izzBy91xEisEbro5Cmz-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="360" y="320" as="sourcePoint" />
+            <mxPoint x="520" y="320" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1-PAjj-PlqOENZiI3AEx-14" value="Tipo de interés&lt;br&gt;&lt;br&gt;A Rh(+)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="_izzBy91xEisEbro5Cmz-1" vertex="1">
+          <mxGeometry x="530" y="280" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="1-PAjj-PlqOENZiI3AEx-16" value="" style="endArrow=classicThin;html=1;rounded=0;endFill=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fillColor=#f5f5f5;strokeColor=#666666;" parent="_izzBy91xEisEbro5Cmz-1" source="1-PAjj-PlqOENZiI3AEx-17" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="580" as="sourcePoint" />
+            <mxPoint x="180" y="280" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="160" y="420" />
+              <mxPoint x="160" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1-PAjj-PlqOENZiI3AEx-17" value="Otros tipos" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="_izzBy91xEisEbro5Cmz-1" vertex="1">
+          <mxGeometry x="280" y="400" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="1-PAjj-PlqOENZiI3AEx-19" value="" style="endArrow=classicThin;html=1;rounded=0;endFill=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fillColor=#f5f5f5;strokeColor=#666666;" parent="_izzBy91xEisEbro5Cmz-1" target="1-PAjj-PlqOENZiI3AEx-17" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="500" y="320" as="sourcePoint" />
+            <mxPoint x="500" y="400" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="500" y="420" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1-PAjj-PlqOENZiI3AEx-20" value="" style="endArrow=classicThin;html=1;rounded=0;endFill=1;strokeColor=#CC0000;" parent="_izzBy91xEisEbro5Cmz-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="800" y="290" as="sourcePoint" />
+            <mxPoint x="800" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hDwJbSMpAbNm7lMzf5YO-0" value="\(S\): suceso que representa que la víctima del accidente se salva. &lt;br&gt;&lt;br&gt;Ocurre cuando \(t_3 + t_{1+2} &amp;lt; 10.05\) min&lt;br&gt;&lt;br&gt;\(P(S)= \, ?\)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="_izzBy91xEisEbro5Cmz-1" vertex="1">
+          <mxGeometry x="600" y="115" width="359" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="s1jbjsGKtsi7QJ8DUr0c-3" value="" style="shape=crossbar;whiteSpace=wrap;html=1;rounded=1;" parent="_izzBy91xEisEbro5Cmz-1" vertex="1">
+          <mxGeometry x="220" y="70" width="340" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="s1jbjsGKtsi7QJ8DUr0c-4" value="" style="shape=crossbar;whiteSpace=wrap;html=1;rounded=1;" parent="_izzBy91xEisEbro5Cmz-1" vertex="1">
+          <mxGeometry x="560" y="70" width="170" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Rg6ml-Bay-zmC-Fp2kLT-0" value="\(t_{1+2} = 2\)&lt;br&gt;&lt;br&gt;por cada selección de donante (1) + tipificación de sangre (2)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="_izzBy91xEisEbro5Cmz-1" vertex="1">
+          <mxGeometry x="220" y="31" width="340" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="Rg6ml-Bay-zmC-Fp2kLT-1" value="\(t_3 = 2\)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="_izzBy91xEisEbro5Cmz-1" vertex="1">
+          <mxGeometry x="560" y="10" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rg6ml-Bay-zmC-Fp2kLT-3" value="\(A_i\): suceso que representa que la sangrede la i-ésima selección y tipificación&amp;nbsp;es de tipo A Rh(+). &lt;br&gt;&lt;br&gt;\(P(A_i)= 0.4 \; \forall \; i \in \mathbb{N}\)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="_izzBy91xEisEbro5Cmz-1" vertex="1">
+          <mxGeometry x="530" y="370" width="359" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rg6ml-Bay-zmC-Fp2kLT-4" value="\(\overline{A_i}\): suceso que representa que la sangre de la i-ésima selección y tipificación no es de tipo A Rh(+). &lt;br&gt;&lt;br&gt;\(P(\overline{A_i})= 0.6&amp;nbsp;\; \forall \; i \in \mathbb{N}\)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="_izzBy91xEisEbro5Cmz-1" vertex="1">
+          <mxGeometry x="280" y="440" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rg6ml-Bay-zmC-Fp2kLT-5" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" parent="_izzBy91xEisEbro5Cmz-1" source="s1jbjsGKtsi7QJ8DUr0c-4" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="540" y="340" as="sourcePoint" />
+            <mxPoint x="800" y="80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rg6ml-Bay-zmC-Fp2kLT-6" value="\(t\) [min]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="_izzBy91xEisEbro5Cmz-1" vertex="1">
+          <mxGeometry x="781" y="20" width="40" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

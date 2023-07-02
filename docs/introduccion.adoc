@@ -23,6 +23,7 @@ El presente trabajo contiene la resolución de una selección de ejercicios de l
 
 +++<br>+++
 
+****
 [IMPORTANT]
 ====
 Se recomienda al alumno que complemente el presente texto con otros trabajos similares, como por ejemplo los ejercicios resueltos de los libros de texto tradicionales de la asignatura, así como libros enfocados específicamente en el _planteo y la resolución de problemas y ejercicios_:
@@ -31,15 +32,20 @@ Se recomienda al alumno que complemente el presente texto con otros trabajos sim
 - Estadística. SPIEGEL, M., STEPHENS L. Serie Schaum.
 - Teoría y Problemas de Probabilidad y Estadística. SPIEGEL, M. Serie Schaum.
 ====
+****
 
 
 == Nota Aclaratoria
 
+****
 WARNING: Este material no debe tomarse como una prescripción de la única forma de resolver los problemas y ejercicios, dado que muchos de ellos pueden abordarse y resolverse por otros caminos, obviamente arribando al mismo resultado.
+****
 
 +++<br>+++
 
+****
 IMPORTANT: Para un uso eficaz de este trabajo, así como para maximizar los resultados del proceso de aprendizaje, se recomienda al alumno que emplee este material teniendo en cuenta las recomendaciones indicadas en la sección *Consejos para el uso de los resueltos*.
+****
 
 
 == Instrucciones de Uso
