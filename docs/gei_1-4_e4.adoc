@@ -63,7 +63,7 @@ image::gei_1-4_e4_1.PNG[align="center"]
 
 == Resolución
 
-+++<p class='pregunta'>1. ¿Cuál es la probabilidad que se salve la víctima del accidente (evento stem:[S]) si solo se dispone de un equipo para tipificar la sangre?<p>+++
++++<p class='pregunta'>1. ¿Cuál es la probabilidad que se salve la víctima del accidente (evento \(S\)]) si solo se dispone de un equipo para tipificar la sangre?<p>+++
 
 . Del planteo, se observa que el _evento_ stem:[S] se compone de los siguientes _eventos fundamentales_ de stem:[E]:
 
