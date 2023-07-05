@@ -1,0 +1,275 @@
+= Planteo y Resolución de Problemas
+:author: Alejandro Lentini 
+:email: alentini@frh.utn.edu.ar
+:revdate: 2023-07-03
+:imagesdir: ./images
+:showtitle: true
+:stem: latexmath
+:toc:
+:toc-title: Contenidos
+
+
+== Introducción
+
+- El presente texto resume algunos conceptos básicos acerca del _planteo y resolución de problemas_ en el contexto de la asignatura _probabilidad y estadística_.
+
+- Se comienza dando un resumen de las nociones generales del _planteo y resolución de problemas_, para luego continuar con las recomendaciones específicas según las distintas unidades temáticas de la asignatura.
+
+- En cuanto a las _nociones generales del planteo y resolución de problemas_, este apunte se basa en los trabajos que sobre dicha temática desarrollaron los matemáticos George Polya y Alan Shoenfeld:
+
+** https://es.wikipedia.org/wiki/C%C3%B3mo_plantear_y_resolver_problemas["Cómo plantear y resolver problemas, George Polya", window="blank"].
+
+** https://books.google.com.cu/books?id=0cbSBQAAQBAJ&printsec=copyright#v=onepage&q&f=false["Mathematical problem solving, Alan Shoenfeld", window="blank"].
+
+
+== Nota Aclaratoria
+
+****
+WARNING: Este material no debe tomarse como una prescripción de las únicas estrategias existentes para resolver problemas en el ámbito de la asignatura probabilidad y estadística, sino que únicamente constituye una recopilación que resulta de utilidad para conocer las estrategias que sí han demostrado ser de eficacia en el planteo y resolución de problemas.
+****
+
++++<br>+++
+
+****
+IMPORTANT: Parafraseando a Polya, así como no es posible convertirse en un buen nadador o pianista simplemente leyendo sobre técnicas de nado o piano, para poder lograr una buena _capacidad de planteo y resolución de problemas_, es necesario dedicar muchísimas horas a la ardua tarea de plantear y resolver ejercicios y problemas. *Así que pues, a resolver problemas!!!*.
+****
+
+
+== Nociones Preliminares
+
+=== Conceptos relacionados
+
+- Un *problema* puede entenderse como :
+
+> .	Cuestión que se trata de aclarar.
+> .	Conjunto de hechos o circunstancias que dificultan la consecución de algún fin.
+> .	Situación que un individuo o grupo quieren o necesitan resolver para conseguir algún fin.
+> -- Adaptado del https://www.rae.es/drae2001/problema["Diccionario de la Lengua Española RAE", window="blank"]
+
+- Un *ejercicio* es una actividad que se realiza para poner en práctica conocimientos previamente adquiridos, y donde sólo es necesario la aplicación de reglas y procedimientos de forma rutinaria.
+
+- La *resolución de problemas* es la actividad cognitiva deliberada que un individuo o grupo realizan con el propósito de dar solución, o resolver, un problema.
+
+- *Algoritmo*: conjunto ordenado de operaciones sistemáticas que permite obtener la solución a un problema.
+
+
+=== Metodología de resolución de problemas
+
+El matemático Polya, en su famoso libro _Cómo plantear y resolver problemas_,  propuso una metodología en cuatro etapas para la resolución de problemas:
+
+.	Comprensión del problema.
+.	Concepción de un plan.
+.	Ejecución del plan.
+.	Verificación de la solución.
+
+A su vez, cada etapa tiene asociadas una serie de preguntas y sugerencias que aplicadas adecuadamente ayudan a resolver el problema.
+
+
+==== Comprensión del problema
+
+- ¿Cuál es la incógnita? ¿Cuáles son los datos? ¿Cuál es la condición?
+
+- ¿Es la condición suficiente para determinar la incógnita? ¿Es insuficiente? ¿Redundante? ¿Contradictoria?
+
+
+==== Concepción de un plan
+
+- ¿Se ha encontrado con un problema semejante? ¿Ha visto el mismo problema planteado en forma ligeramente diferente?
+
+- ¿Conoce un problema relacionado con éste? ¿Conoce algún teorema que le pueda ser útil? Mire atentamente la incógnita y trate de recordar un problema que le sea familiar y que tenga la misma incógnita o una incógnita similar.
+
+- He aquí un problema relacionado con el suyo y que se ha resuelto ya. ¿Podría utilizarlo? ¿Podría emplear su resultado? ¿Podría utilizar su método? ¿Podría utilizarlo introduciendo algún elemento auxiliar?
+
+- ¿Podría enunciar el problema en otra forma? ¿Podría plantearlo en forma diferente nuevamente? Refiérase a las definiciones.
+
+- Si no puede resolver el problema propuesto, trate de resolver primero algún problema similar. ¿Podría imaginarse un problema análogo un tanto más accesible? ¿Un problema más general? ¿Un problema más particular? ¿Un problema análogo? ¿Puede resolver una parte del problema? Considere sólo una parte de la condición; descarte la otra parte; ¿en qué medida la incógnita queda ahora determinada? ¿en qué forma puede variar? ¿Puede usted deducir algún elemento útil de los datos? ¿Puede pensar en algunos otros datos apropiados para determinar la incógnita? ¿Puede cambiar la incógnita? ¿Puede cambiar la incógnita, los datos, o ambos si es necesario, de tal forma que la nueva incógnita y los nuevos datos estén más cercanos entre sí?
+
+- ¿Ha empleado todos los datos? ¿Ha empleado toda la condición? ¿Ha considerado usted todas las nociones esenciales concernientes al problema?
+
+
+==== Ejecución del plan
+
+- Al ejecutar el plan, compruebe cada uno de los pasos. 
+
+- ¿Puede ver claramente que el paso es correcto? ¿Puede demostrarlo?
+
+
+==== Verificación de la solución
+
+- ¿Puede usted verificar el resultado? ¿Puede verificar el razonamiento?
+
+- ¿Puede obtener el resultado en forma diferente? ¿Puede verlo de golpe? ¿Puede emplear el resultado o el método en algún otro problema?
+
+
+=== Heurísticas
+
+- Se entiende como *heurísticas* al conjunto de estrategias para resolver problemas. 
+
+- En las siguientes secciones, el matemático Schoenfeld propone, en _Mathematical problem solving_, un conjunto de _heurísticas para plantear y resolver problemas_.
+
+
+==== Análisis
+
+. Dibuje un diagrama siempre que sea posible.
+
+. Examine casos especiales.
+
+.. Seleccione algunos valores especiales para ejemplificar el problema e irse familiarizando con él.
+
+.. Examine casos límite para explorar el rango de posibilidades.
+
+.. Si hay un parámetro entero, dele sucesivamente los valores 1, 2, …, m y vea si emerge algún patrón inductivo.
+
+. Trate de simplificar el problema.
+
+.. Explotando la existencia de simetría.
+
+.. Usando argumentos del tipo _sin pérdida de generalidad_.
+
+
+==== Exploración
+
+. Considere problemas esencialmente equivalentes.
+
+.. Reemplazando condiciones por otras equivalentes.
+
+.. Recombinando los elementos del problema de maneras diferentes.
+
+.. Introduciendo elementos auxiliares.
+
+.. Reformulando el problema:
+
+*** Mediante un cambio de perspectiva o notación.
+*** Mediante argumentos por contradicción o contraposición.
+*** Asumiendo que tenemos una solución y determinando sus
+propiedades.
+
+. Considere un problema ligeramente modificado.
+
+.. Escoja submetas (tratando de satisfacer parcialmente las condiciones).
+
+.. Relaje una condición y luego trate de reimponerla.
+
+.. Descomponga el dominio del problema y trabaje caso por caso.
+
+. Considere problemas sustancialmente modificados.
+
+.. Construya un problema análogo con menos variables.
+
+.. Deje todas las variables fijas excepto una, para determinar su impacto.
+
+.. Trate de aprovechar cualquier problema relacionado que tenga forma, datos o conclusiones similares.
+
+
+==== Verificación de la solución
+
+. ¿Pasa su solución estas pruebas específicas?
+
+.. ¿Usa todos los datos pertinentes?
+
+.. ¿Está de acuerdo con estimaciones o predicciones razonables?
+
+.. ¿Soporta pruebas de simetría, análisis dimensional y escala?
+
+. ¿Pasa estas pruebas generales?
+
+.. ¿Puede ser obtenida de manera diferente?
+.. ¿Puede ser sustanciada por casos especiales?
+.. ¿Puede ser reducida a resultados conocidos?
+.. ¿Puede utilizarse para generar algún resultado conocido?
+
+
+=== Algunas reflexiones
+
+- A continuación se presentan algunas reflexiones sobre la _práctica de plantear y resolver problemas_.
+
++++<br>+++
+
+> La palabra *problema* proviene del griego [y significa] “lanzar adelante". Un problema es un obstáculo arrojado ante la inteligencia para ser superado, una dificultad que exige ser resuelta, una cuestión que reclama ser aclarada. Todos vivimos resolviendo problemas: desde el más básico de asegurar la cotidiana subsistencia, común a todos los seres vivos, hasta los más complejos desafíos planteados por la ciencia y la tecnología. La importancia de la actividad de resolución de problemas es evidente; en definitiva, todo el progreso científico y tecnológico, el bienestar y hasta la supervivencia de la especie humana dependen de esta habilidad.
+
+> […] lamentablemente todavía es muy común que se expongan ante el alumno los productos y resultados de la resolución de problemas, pero no el proceso mismo. Si examinamos un libro de texto con problemas resueltos de matemática, encontraremos por lo general soluciones tersas y acabadas. Rara vez el autor incluye comentarios sobre los intentos fallidos de solución, los casos particulares examinados antes de llegar a la solución general o los refinamientos realizados a una primera solución no totalmente satisfactoria. Estos y otros elementos del proceso son cuidadosamente eliminados y lo que se nos presenta es el producto final, conciso y elegante. […] la consecuencia es que el estudiante obtiene una visión falseada de lo que es resolver problemas y de la actividad matemática en general.
+> -- https://www.guao.org/sites/default/files/biblioteca/Resoluci%C3%B3n%20de%20Problemas%20Matem%C3%A1ticos%20.pdf["Resolución de Problemas Matemáticos. José Heber Nieto Said. Talleres de Formación Matemática. Maracaibo. 26 al 31 de julio de 2004", wondow="blank"]
+
++++<br>+++
+
+> Resolver un problema es encontrar un camino allí donde no se conocía previamente camino alguno, encontrar la forma de salir de una dificultad, de sortear un obstáculo, conseguir el fin deseado, que no se consigue do forma inmediata, utilizando los medios adecuados.
+> […] Resolver un problema es hacer un descubrimiento. Un gran problema significa un gran descubrimiento, pero hay una partícula de descubrimiento en la solución de cualquier problema. El suyo puede ser modesto, pero si pone a prueba la curiosidad que induce a poner en juego las facultades inventivas, y si lo resuelve por medios propios, puede experimentar la tensión y el encanto del descubrimiento y el goce del triunfo.
+> -- https://es.wikipedia.org/wiki/C%C3%B3mo_plantear_y_resolver_problemas["Cómo plantear y resolver problemas. George Polya", window="blank"]
+
++++<br>+++
+
+> La mejor forma de aprender es hacer; la peor forma de enseñar es hablar.
+> [...] ¿Puede uno aprender matemáticas leyendo? Estoy inclinado a decir que no. Leer tiene una ventaja sobre escuchar porque leer es más activo —pero no mucho. Leer con papel y lápiz al lado es mucho mejor —es un gran paso en la dirección correcta.
+> [...] ¿Cuál es entonces el secreto —cuál es la mejor forma de enseñar a resolver problemas? La respuesta se implica por la oración con la que inicié: resuelve problemas. 
+> -- https://www.ommenlinea.org/wp-content/uploads/practica/entrenador/Paul_Halmos_-_El_problema_de_aprender_a_ense%C3%B1ar.pdf["El Problema de Aprender a Enseñar: La Enseñanza de la Solución de Problemas. Paul Halmos.", window="blank"]
+
++++<br>+++
+
+> Estoy seguro de que a ustedes les habrá pasado alguna vez que se tropezaron con una idea, pero no estaban tan seguros de que fuera cierta y se quedaron un rato pensándola. Pero lo maravilloso es poder “entretener” en la cabeza de uno algún problema cuya solución sea incierta. Y darle vueltas, mirarlo desde distintos ángulos, dudar, empezar de nuevo. Enfurecerse con él. Abandonarlo para reencontrarlo más tarde. Es una experiencia inigualable: se las recomiendo.
+> En la historia de la ciencia, de las distintas ciencias, hay muchos ejemplos de situaciones como las expuestas en el párrafo anterior. En algunos casos, los problemas planteados, pudieron resolverse sencillamente. En otros, las soluciones fueron mucho más difíciles, llevó años (hasta siglos) encontrarlas. Pero como ustedes ya sospechan a esta altura, hay muchos de los que todavía no se sabe si son ciertos o falsos.
+> […] la belleza que contiene pensar un problema cuya respuesta uno ignora. Sobre todo eso: pensar, imaginar caminos, disfrutar de la duda. Y en todo caso, aprender a coexistir con el desconocimiento, pero siempre con la idea de derrotarlo, de descubrir el velo que esconde la verdad.
+> -- http://users.df.uba.ar/caputo/CURSOS-CABA/Matematica-Estas-ahi-Adrian-Paenza.pdf["Matemáticas; ¿Estás ahí? Adrián Paenza", window="blank"]
+
+
+== Estrategias específicas
+
+- En las siguientes secciones se listan algunas recomendaciones para el _planteo y comprensión de problemas_ de probabilidad y estadística.
+
+=== Probabilidad
+
+. Entender y comprender el _experimento/proceso/fenómeno aleatorio_ stem:[ϵ] objeto del problema.
+
+. Tanto para el espacio muestral stem[E] como para cualquier evento de él:
+
+.. Identificar algunos sucesos elementales y entender su generación. Considerar casos límites si los hubiera.
+
+.. Definir tanto por _extensión como por compresión_, identificando la _regla de eligibilidad_.
+
+.. Determinar si se trata de un conjunto finito, infinito numerable o infinito no numerable.
+
+.. Determinar el cardinal para el caso de conjuntos finitos.
+
+.. Para la determinación del conteo de puntos muestrales en espacios muestrales finitos, emplear resultados combinatorios: principios de la suma y de la multiplicación, permutaciones y combinaciones.
+
+.. Determinar si es posible aplicar el _principio de indiferencia_ para suponer _equiprobabilidad_ de los sucesos elementales.
+
+. De ser posible emplear:
+
+.. Diagrama de Venn-Euler.
+
+.. Diagrama de árbol.
+
+.. Tabla de probabilidades.
+
+. Calcular probabilidades, considerando:
+
+.. Axiomas de probabilidad.
+
+.. Tipo de probabilidad: _marginal, conjunta y condicional_.
+
+.. Indepenencia estadística.
+
+.. Teorema de la probabilidad total.
+
+.. Teorema de Bayes.
+
+
+=== Variables aleatorias
+
+. Entender y comprender el _experimento/proceso/fenómeno aleatorio_ stem:[ϵ] objeto del problema.
+
+. Identificar las _variable aleatorias_ y comprender cómo está ndefinida, incluyendo sus unidades y recorrido.
+
+. Identificar los sucesos de interés, ya sea en el espacio muestral stem:[E], o sus _sucesos equivalentes_ en el recorrido de la variable aleatoria.
+
+. Identificar la distribución que sigue cada variable aleatoria. Para el caso de modelos probabilísticos conocidos, verificar la aplicabilidad de todos los supuestos del modelo.
+
+. Para el caso de modelos probabilísticos conocidos, y cuando se haya justificado su aplicación, identificar o calcular los parámetros correspondientes.
+
+. Calcular probabilidades, considerando:
+
+.. _Función masa de probabilidad_ (v.a.d) stem:[\, fmp: f_X(x) = p_x(x) = P(X=x)]
+
+.. _Función de densidad probabilidad_ (v.a.c) stem:[\, fdp: f_X(x)]
+
+.. _Función de distribución acumulada_ (v.a.d y v.a.c) stem:[\, fda: F_X(x) = P(X \leq x)]
